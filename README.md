@@ -1,12 +1,8 @@
-# Vindi::Ruby
+# Vindi Ruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vindi/ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
+Ruby toolkit para a [API de Recorrência][link-introducao-api] da [Vindi][link-vindi].
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
+## Instalação
 
 ```ruby
 gem 'vindi-ruby'
@@ -20,20 +16,23 @@ Or install it yourself as:
 
     $ gem install vindi-ruby
 
-## Usage
+## Dúvidas
+Caso necessite de informações sobre a plataforma ou API, por favor acesse o [Atendimento Vindi](http://atendimento.vindi.com.br/hc/pt-br).
 
-TODO: Write usage instructions here
+## Segurança
+Se você descobrir qualquer questão relacionada a segurança, por favor, envie um e-mail para seguranca@vindi.com.br ao invés de utilizar os issues.
 
-## Development
+## Changelog
+Todas as informações sobre cada release podem ser consultadas em [CHANGELOG.md](CHANGELOG.md).
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+## Créditos
+- [Vindi][link-author]
+- [Todos os Contribuidores][link-contributors]
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Licença
+GNU GPLv3. Por favor, veja o [Arquivo de Licença](license.txt) para mais informações.
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/vindi-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Code of Conduct
-
-Everyone interacting in the Vindi::Ruby project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/vindi-ruby/blob/master/CODE_OF_CONDUCT.md).
+[link-vindi]: https://www.vindi.com.br
+[link-introducao-api]: http://atendimento.vindi.com.br/hc/pt-br/articles/203020644-Introdu%C3%A7%C3%A3o-%C3%A0-API-de-Recorr%C3%AAncia
+[link-author]: https://github.com/vindi
+[link-contributors]: https://github.com/vindi/vindi-ruby/graphs/contributors
