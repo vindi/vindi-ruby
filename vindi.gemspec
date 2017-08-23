@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "vindi_ruby/version"
+require "vindi/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "vindi-ruby"
-  spec.version       = VindiRuby::VERSION
+  spec.version       = Vindi::VERSION
   spec.authors       = %q{Vindi}
   spec.email         = %q{developers@vindi.com.br}
   spec.summary       = %q{Ruby toolkit for working with the Vindi API}

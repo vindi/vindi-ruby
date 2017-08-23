@@ -1,7 +1,7 @@
 require 'simplecov'
 SimpleCov.start
 
-require 'vindi_ruby'  
+require 'vindi'  
 require 'rspec'
 require 'webmock/rspec'
 
