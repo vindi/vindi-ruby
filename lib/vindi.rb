@@ -1,5 +1,5 @@
-require 'vindi/client'
 require 'vindi/version'
+require 'vindi/client'
 
 module Vindi
 end
