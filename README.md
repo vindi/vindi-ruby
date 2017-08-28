@@ -16,6 +16,41 @@ Or install it yourself as:
 
     $ gem install vindi-ruby
 
+## Uso
+Os métodos da API estão disponíveis atraves dos métodos da instancia de um cliente
+
+```ruby
+  client = Vindi::Client.new(key: 'VINDI_KEY')
+``` 
+
+### Consumindo recursos
+Os recursos são fornecidos através do objeto de retono e os campos retornados podem ser acessados pela notação de objetos ou attributos de um Hash 
+
+```ruby
+  # Listando planos de um lojista
+  client.list_plans
+  # => {:plans=>[{:id=>15, :name=>"My awesome plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
+
+  # Consultando um plano
+  client.plan(15)
+  # => {:plans=>[{:id=>15, :name=>"My awesome plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
+
+  # Atualizando um plano
+  client.update_plan(15, {name: 'My plan'})
+  # => {:plans=>[{:id=>15, :name=>"My plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
+
+  # Criando um plano
+  client.create_plan({name: 'My new plan', interval: 'months', interval_count: 1,  billing_trigger_type: 'beginning_of_period'})
+``` 
+
+### Acessando respostas HTTP
+
+```ruby
+  client.list_plans
+  response  = client.last_response
+  status = response.status
+``` 
+
 ## Dúvidas
 Caso necessite de informações sobre a plataforma ou API, por favor acesse o [Atendimento Vindi](http://atendimento.vindi.com.br/hc/pt-br).
 
