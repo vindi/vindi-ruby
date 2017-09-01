@@ -6,7 +6,7 @@ module Vindi
     module Customer
 
       # List customer for the authenticate user
-      # @return [Array<Sawyer::Resource>] A list of customers for a merchant.
+      # @return [Array<Hash>] A list of customers for a merchant.
       # @example Get all customers from merchant vindi
       def list_customers(options = {})
         get 'customers', options
@@ -15,7 +15,7 @@ module Vindi
       # Get a single customer from a merchant
       #
       # @param customer_id [Integer] ID of the customer
-      # @return [Sawyer::Resource] The customer you requested, if it exists
+      # @return [Hash] The customer you requested, if it exists
       # @see https://vindi.github.io/api-docs/dist/#!/customers/GET_version_customers_id_format
       # @example Get customer #2 from vindi
       #   client.customer(2)
@@ -27,7 +27,7 @@ module Vindi
       # 
       # @option options [Hash] :options customer attributes
       # @see https://vindi.github.io/api-docs/dist/#!/customers/POST_version_customers_format 
-      # @return [Sawyer::Resource] The customer created
+      # @return [Hash] The customer created
       # @example Create a customer for a merchant vindi
       #   client.create_customer(name: 'John Doe', email: 'john.doe@mail.com')
       def create_customer(options = {})

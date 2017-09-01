@@ -1,3 +1,6 @@
+require 'vindi/response/raise_error'
+require 'vindi/version'
+
 module Vindi
   module Default
     # Default API endpoint 
@@ -8,6 +11,8 @@ module Vindi
 
     # Default User Agent header string
     USER_AGENT   = "Vindi Ruby Gem #{Vindi::VERSION}".freeze
+
+    MIDDLEWARE   = Vindi::Response::RaiseError
 
     class << self
     
@@ -33,6 +38,19 @@ module Vindi
       # @return [String]
       def user_agent
         ENV['VINDI_USER_AGENT'] || USER_AGENT
+      end
+
+      def middleware
+        MIDDLEWARE
+      end
+
+      def connection_options
+        {
+          headers: {
+            'Content-Type': default_media_type,
+            'User-Agent': user_agent
+          }
+        }
       end
 
       # Default Settings for Vindi Ruby Gem

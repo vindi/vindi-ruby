@@ -1,71 +1,18 @@
-require 'sawyer'
+require 'faraday'
+require 'json'
 
 module Vindi
   module Connection
-
-    # Make a HTTP GET request
-    #
-    # @param url [String] The path, relative to {#api_endpoint}
-    # @param options [Hash] Query and header params for request
-    # @return [Sawyer::Resource]
-    def get(url, options = {})
-      request :get, url, options
-    end
-
-    # Make a HTTP POST request
-    #
-    # @param url [String] The path, relative to {#api_endpoint}
-    # @param options [Hash] Query and header params for request
-    # @return [Sawyer::Resource]
-    def post(url, options = {})
-      request :post, url, options
-    end
-
-    # Make a HTTP PUT request
-    #
-    # @param url [String] The path, relative to {#api_endpoint}
-    # @param options [Hash] Query and header params for request
-    # @return [Sawyer::Resource]
-    def put(url, options = {})
-      request :put, url, options
-    end
-
-    # Make a HTTP PATCH request
-    #
-    # @param url [String] The path, relative to {#api_endpoint}
-    # @param options [Hash] Body and header params for request
-    # @return [Sawyer::Resource]
-    def patch(url, options = {})
-      request :patch, url, options
-    end
-
-    # Make a HTTP DELETE request
-    #
-    # @param url [String] The path, relative to {#api_endpoint}
-    # @param options [Hash] Body and header params for request
-    # @return [Sawyer::Resource]
-    def delete(url, options = {})
-      request :delete, url, options
-    end
-
-    # Make a HTTP HEAD request
-    #
-    # @param url [String] The path, relative to {#api_endpoint}
-    # @param options [Hash] Body and header params for request
-    # @return [Sawyer::Resource]
-    def head(url, options = {})
-      request :head, url, options
-    end
    
-    # Hypermedia agent for the Vindi API
+    # HTTP client for the Vindi API
     #
-    # @return [Sawyer::Agent]
-    def agent
-      @agent ||= Sawyer::Agent.new(api_endpoint, sawyer_options) do |http|
-        http.headers[:accept] = default_media_type
-        http.headers[:content_type] = "application/json"
-        http.headers[:user_agent] = user_agent
+    # @return Faraday::Connection
+    def http_client
+      @http_client = Faraday.new(api_endpoint, connection_options) do |http|
+        http.request(:url_encoded)
         http.basic_auth(@key, '')
+        http.builder.use @middleware
+        http.adapter(Faraday.default_adapter)
       end
     end
 
@@ -75,16 +22,24 @@ module Vindi
 
     private
 
-    def sawyer_options
-      { links_parser: Sawyer::LinkParsers::Simple.new }
+    def request(method, path, data, options = {})
+      @last_response = response = http_client
+        .public_send(method, URI::Parser.new.escape(path.to_s), data, options)
+
+      response.body.empty? ? '' : symbolize_keys!(JSON.parse(response.body))
     end
 
-    def request(method, path, data, options = {})
-      @last_response = response = agent.call(
-        method, URI::Parser.new.escape(path.to_s), data, options
-      )
-
-      response.data 
+    def symbolize_keys!(object)
+      if object.is_a?(Array)
+        object.each_with_index do |val, index|
+          object[index] = symbolize_keys!(val)
+        end
+      elsif object.is_a?(Hash)
+        object.keys.each do |key|
+          object[key.to_sym] = symbolize_keys!(object.delete(key))
+        end
+      end
+      object
     end
   end
 end

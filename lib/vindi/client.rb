@@ -1,12 +1,12 @@
 require 'vindi/configuration'
-require 'vindi/connection'
+require 'vindi/request'
 require 'vindi/rest/plan'
 require 'vindi/rest/customer'
 
 module Vindi
   class Client
     include Vindi::Configuration
-    include Vindi::Connection
+    include Vindi::Request
     include Vindi::Rest::Plan
     include Vindi::Rest::Customer
 

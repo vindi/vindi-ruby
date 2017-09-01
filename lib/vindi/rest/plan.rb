@@ -8,16 +8,16 @@ module Vindi
       # List plans for the authenticate user
       # @option options [Integer] :page (1) Page number.
       # @option options [Integer] :merchant Merchant account
-      # @return [Array<Sawyer::Resource>] A list of plans for a merchant.
+      # @return [Array<Hash>] A list of plans for a merchant.
       # @example Get all plans from merchant vindi
       def list_plans(options = {})
-        get 'plans', options
+        get('plans', options)
       end
       
       # Get a single plan from a merchant
       #
       # @param plan_id [Integer] ID of the plan
-      # @return [Sawyer::Resource] The plan you requested, if it exists
+      # @return [Hash] The plan you requested, if it exists
       # @see https://vindi.github.io/api-docs/dist/#!/plans/GET_version_plans_id_format
       # @example Get plan #2 from vindi
       #   client.plan(2)
@@ -29,7 +29,7 @@ module Vindi
       # 
       # @option options [Hash] :options Plan attributes
       # @see https://vindi.github.io/api-docs/dist/#!/plans/POST_version_plans_format 
-      # @return [Sawyer::Resource] The plan created
+      # @return [Hash] The plan created
       # @example Create a plan for a merchant vindi
       #   client.create_plan(name: 'My Plan', interval: 12)
       def create_plan(options = {})
