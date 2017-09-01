@@ -26,3 +26,11 @@ def vindi_url(url)
   return url if url =~ /^https/
   url.prepend(Vindi::Default.api_endpoint)
 end
+
+def test_key
+  'xDw3elPwddlzqgFzJqZXkiy-jZlzVvY7L1aVdcDbMHg'
+end
+
+def basic_auth_client(key = test_key)
+  Vindi::Client.new(key: key)
+end

@@ -7,10 +7,8 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      Content-Type:
-      - application/vnd.api+json
       User-Agent:
-      - Vindi Ruby Gem 0.0.1
+      - Vindi-Ruby/0.0.1
       Authorization:
       - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Accept-Encoding:
@@ -27,15 +25,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 01 Sep 2017 14:41:45 GMT
+      - Fri, 01 Sep 2017 22:42:38 GMT
       Server:
       - nginx
       Set-Cookie:
-      - _mkra_ctxt=7dac0b45408e6e6bc94e22faf0c777f4--404; path=/; max-age=5; HttpOnly
+      - _mkra_ctxt=0652f45917d9264e0bf3cbf8b3fc05f0--404; path=/; max-age=5; HttpOnly
       X-Request-Id:
-      - 935af5cd-f72e-441f-8b37-ac1289742834
+      - b7544c8c-59df-48a8-b14d-03e63960e927
       X-Runtime:
-      - '0.007221'
+      - '0.005036'
       Content-Length:
       - '60'
       Connection:
@@ -46,5 +44,5 @@ http_interactions:
         eyJpZCI6Im5vdF9mb3VuZCIsIm1lc3NhZ2UiOiJSZWN1cnNvIG7Do28gZW5j
         b250cmFkbzogUGF0aCJ9
     http_version: 
-  recorded_at: Fri, 01 Sep 2017 14:41:45 GMT
+  recorded_at: Fri, 01 Sep 2017 22:42:39 GMT
 recorded_with: VCR 3.0.3

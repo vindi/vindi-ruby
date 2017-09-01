@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 01 Sep 2017 22:42:45 GMT
+      Etag:
+      - W/"859f3ab2697533ce8f000e3d3381adf7"
+      Per-Page:
+      - '25'
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '109'
+      Rate-Limit-Reset:
+      - '1504305818'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=36cf0595ef82e3c3c714f1be1a0e07b0--200; path=/; max-age=5; HttpOnly
+      Total:
+      - '19'
+      X-Request-Id:
+      - c653ef0d-eb9f-4653-9680-147536c78aa8
+      X-Runtime:
+      - '0.073180'
+      Content-Length:
+      - '7389'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"products":[{"id":26,"name":"t-shirt","code":null,"unit":"","status":"active","description":"","invoice":"always","created_at":"2017-07-19T21:09:39.000-03:00","updated_at":"2017-09-01T19:33:19.000-03:00","pricing_schema":{"id":223,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:33:19.000-03:00"},"metadata":{}},{"id":48,"name":"t-shirt
+        one","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T18:54:32.000-03:00","updated_at":"2017-09-01T18:54:32.000-03:00","pricing_schema":{"id":203,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T18:54:32.000-03:00"},"metadata":{}},{"id":49,"name":"t-shirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T18:58:10.000-03:00","updated_at":"2017-09-01T18:58:10.000-03:00","pricing_schema":{"id":204,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T18:58:10.000-03:00"},"metadata":{}},{"id":50,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:03:39.000-03:00","updated_at":"2017-09-01T19:03:39.000-03:00","pricing_schema":{"id":205,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:03:39.000-03:00"},"metadata":{}},{"id":51,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:03:45.000-03:00","updated_at":"2017-09-01T19:03:45.000-03:00","pricing_schema":{"id":206,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:03:45.000-03:00"},"metadata":{}},{"id":52,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:03:47.000-03:00","updated_at":"2017-09-01T19:03:47.000-03:00","pricing_schema":{"id":207,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:03:47.000-03:00"},"metadata":{}},{"id":53,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:03:48.000-03:00","updated_at":"2017-09-01T19:03:48.000-03:00","pricing_schema":{"id":208,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:03:48.000-03:00"},"metadata":{}},{"id":54,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:05:18.000-03:00","updated_at":"2017-09-01T19:05:18.000-03:00","pricing_schema":{"id":209,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:05:18.000-03:00"},"metadata":{}},{"id":55,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:06:14.000-03:00","updated_at":"2017-09-01T19:06:14.000-03:00","pricing_schema":{"id":210,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:06:14.000-03:00"},"metadata":{}},{"id":56,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:06:16.000-03:00","updated_at":"2017-09-01T19:06:16.000-03:00","pricing_schema":{"id":211,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:06:16.000-03:00"},"metadata":{}},{"id":57,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:06:25.000-03:00","updated_at":"2017-09-01T19:06:25.000-03:00","pricing_schema":{"id":212,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:06:25.000-03:00"},"metadata":{}},{"id":58,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:08:00.000-03:00","updated_at":"2017-09-01T19:08:00.000-03:00","pricing_schema":{"id":213,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:08:00.000-03:00"},"metadata":{}},{"id":59,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:08:38.000-03:00","updated_at":"2017-09-01T19:08:38.000-03:00","pricing_schema":{"id":214,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:08:38.000-03:00"},"metadata":{}},{"id":60,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:09:38.000-03:00","updated_at":"2017-09-01T19:09:38.000-03:00","pricing_schema":{"id":215,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:09:38.000-03:00"},"metadata":{}},{"id":61,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:10:14.000-03:00","updated_at":"2017-09-01T19:10:14.000-03:00","pricing_schema":{"id":216,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:10:14.000-03:00"},"metadata":{}},{"id":62,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:12:25.000-03:00","updated_at":"2017-09-01T19:12:25.000-03:00","pricing_schema":{"id":217,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:12:25.000-03:00"},"metadata":{}},{"id":63,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:15:56.000-03:00","updated_at":"2017-09-01T19:15:56.000-03:00","pricing_schema":{"id":218,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:15:56.000-03:00"},"metadata":{}},{"id":64,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:32:24.000-03:00","updated_at":"2017-09-01T19:32:24.000-03:00","pricing_schema":{"id":220,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:32:24.000-03:00"},"metadata":{}},{"id":65,"name":"tshirt","code":null,"unit":null,"status":"active","description":null,"invoice":"always","created_at":"2017-09-01T19:33:19.000-03:00","updated_at":"2017-09-01T19:33:19.000-03:00","pricing_schema":{"id":222,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:33:19.000-03:00"},"metadata":{}}]}'
+    http_version: 
+  recorded_at: Fri, 01 Sep 2017 22:42:45 GMT
+recorded_with: VCR 3.0.3

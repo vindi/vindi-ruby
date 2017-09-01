@@ -47,7 +47,6 @@ module Vindi
       def connection_options
         {
           headers: {
-            'Content-Type': default_media_type,
             'User-Agent': user_agent
           }
         }

@@ -33,7 +33,6 @@ RSpec.describe Vindi::Client do
       it 'sets a default Content-Type header' do
 
         plan_request = stub_get('plans')
-          .with({ headers: {'Content-Type': 'application/vnd.api+json'}})
 
         client.get 'plans'
         assert_requested plan_request
@@ -45,9 +44,7 @@ RSpec.describe Vindi::Client do
         token = 'eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo='
 
         root_request = stub_get('')
-          .with({ headers: {
-                    'Content-Type': 'application/vnd.api+json',
-                    'Authorization': "Basic #{token}"}})
+          .with({ headers: {'Authorization': "Basic #{token}"}})
 
         client.get ''
         assert_requested root_request
