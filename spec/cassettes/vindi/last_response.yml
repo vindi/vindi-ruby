@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 01 Sep 2017 14:31:50 GMT
+      - Fri, 01 Sep 2017 14:41:44 GMT
       Etag:
       - W/"aadc57dd4c354a5491668e3a1aa71bd2"
       Per-Page:
@@ -37,17 +37,17 @@ http_interactions:
       Rate-Limit-Remaining:
       - '119'
       Rate-Limit-Reset:
-      - '1504276370'
+      - '1504276964'
       Server:
       - nginx
       Set-Cookie:
-      - _mkra_ctxt=715a188b730c47d10af17c048d72029a--200; path=/; max-age=5; HttpOnly
+      - _mkra_ctxt=a239cc02d0a327339f195e0145df89df--200; path=/; max-age=5; HttpOnly
       Total:
       - '2'
       X-Request-Id:
-      - c4218d41-04f3-4373-b47e-5b2c5f76e26c
+      - 582cde4d-c179-4fe7-a8cf-af717453fec1
       X-Runtime:
-      - '0.054058'
+      - '0.087320'
       Content-Length:
       - '1291'
       Connection:
@@ -58,5 +58,5 @@ http_interactions:
         12,00","price":"12.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-07-19T21:09:39.000-03:00"},"metadata":{}},"cycles":3,"created_at":"2017-08-24T11:49:33.000-03:00","updated_at":"2017-08-24T11:49:33.000-03:00"}],"metadata":{}},{"id":17,"name":"My
         new plan","interval":"months","interval_count":1,"billing_trigger_type":"beginning_of_period","billing_trigger_day":1,"billing_cycles":null,"code":null,"description":null,"status":"active","installments":1,"invoice_split":false,"interval_name":"Mensal","created_at":"2017-08-28T13:53:02.000-03:00","updated_at":"2017-08-28T13:53:02.000-03:00","plan_items":[],"metadata":{}}]}'
     http_version: 
-  recorded_at: Fri, 01 Sep 2017 14:31:50 GMT
+  recorded_at: Fri, 01 Sep 2017 14:41:45 GMT
 recorded_with: VCR 3.0.3
