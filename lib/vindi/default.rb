@@ -10,7 +10,7 @@ module Vindi
     MEDIA_TYPE   = 'application/vnd.api+json'.freeze
 
     # Default User Agent header string
-    USER_AGENT   = "Vindi Ruby Gem #{Vindi::VERSION}".freeze
+    USER_AGENT   = "Vindi-Ruby/#{Vindi::VERSION}".freeze
 
     MIDDLEWARE   = Vindi::Response::RaiseError
 
