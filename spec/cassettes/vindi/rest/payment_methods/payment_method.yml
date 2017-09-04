@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/payment_methods/13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 04 Sep 2017 14:19:35 GMT
+      Etag:
+      - W/"3eff27f0219ba38acb810a7be2943cfd"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '118'
+      Rate-Limit-Reset:
+      - '1504534834'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=05fe11041f8d76fc8bd9bb340838f649--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 976b2338-40ed-4671-a8df-4dacb3132f95
+      X-Runtime:
+      - '0.021086'
+      Content-Length:
+      - '429'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwYXltZW50X21ldGhvZCI6eyJpZCI6MTMsInB1YmxpY19uYW1lIjoiQ2Fy
+        dMOjbyBkZSBjcsOpZGl0byIsIm5hbWUiOiJDYXJ0w6NvIGRlIGNyw6lkaXRv
+        IiwiY29kZSI6ImNyZWRpdF9jYXJkIiwidHlwZSI6IlBheW1lbnRNZXRob2Q6
+        OkNyZWRpdENhcmQiLCJzdGF0dXMiOiJhY3RpdmUiLCJzZXR0aW5ncyI6eyJh
+        dXRvbWF0aWNfYmlsbF9jaGFyZ2UiOnRydWV9LCJzZXRfc3Vic2NyaXB0aW9u
+        X29uX3N1Y2Nlc3MiOiJzZXRfd2l0aG91dF9hdXRob3JpemF0aW9uIiwiYWxs
+        b3dfYXNfYWx0ZXJuYXRpdmUiOnRydWUsInBheW1lbnRfY29tcGFuaWVzIjpb
+        XSwibWF4aW11bV9hdHRlbXB0cyI6NSwiY3JlYXRlZF9hdCI6IjIwMTctMDct
+        MDVUMTU6MzI6NTQuMDAwLTAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMTctMDct
+        MDVUMTU6MzI6NTQuMDAwLTAzOjAwIn19
+    http_version: 
+  recorded_at: Mon, 04 Sep 2017 14:19:35 GMT
+recorded_with: VCR 3.0.3

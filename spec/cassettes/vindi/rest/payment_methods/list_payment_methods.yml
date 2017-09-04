@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/payment_methods
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 04 Sep 2017 14:19:34 GMT
+      Etag:
+      - W/"265343d244aa470bbca667bbd90c4735"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1504534834'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=5f391060ec10601285f3fa36edbb46e3--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 137a001a-ca0a-4e7b-b09b-ce64beca4533
+      X-Runtime:
+      - '0.022907'
+      Content-Length:
+      - '783'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwYXltZW50X21ldGhvZHMiOlt7ImlkIjoxMywicHVibGljX25hbWUiOiJD
+        YXJ0w6NvIGRlIGNyw6lkaXRvIiwibmFtZSI6IkNhcnTDo28gZGUgY3LDqWRp
+        dG8iLCJjb2RlIjoiY3JlZGl0X2NhcmQiLCJ0eXBlIjoiUGF5bWVudE1ldGhv
+        ZDo6Q3JlZGl0Q2FyZCIsInN0YXR1cyI6ImFjdGl2ZSIsInNldHRpbmdzIjp7
+        ImF1dG9tYXRpY19iaWxsX2NoYXJnZSI6dHJ1ZX0sInNldF9zdWJzY3JpcHRp
+        b25fb25fc3VjY2VzcyI6InNldF93aXRob3V0X2F1dGhvcml6YXRpb24iLCJh
+        bGxvd19hc19hbHRlcm5hdGl2ZSI6dHJ1ZSwicGF5bWVudF9jb21wYW5pZXMi
+        OltdLCJtYXhpbXVtX2F0dGVtcHRzIjo1LCJjcmVhdGVkX2F0IjoiMjAxNy0w
+        Ny0wNVQxNTozMjo1NC4wMDAtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxNy0w
+        Ny0wNVQxNTozMjo1NC4wMDAtMDM6MDAifSx7ImlkIjoxNCwicHVibGljX25h
+        bWUiOiJEaW5oZWlybyIsIm5hbWUiOiJEaW5oZWlybyIsImNvZGUiOiJjYXNo
+        IiwidHlwZSI6IlBheW1lbnRNZXRob2Q6OkNhc2giLCJzdGF0dXMiOiJpbmFj
+        dGl2ZSIsInNldHRpbmdzIjp7ImR1ZV9kYXlzIjozfSwic2V0X3N1YnNjcmlw
+        dGlvbl9vbl9zdWNjZXNzIjoiZG9fbm90X3NldCIsImFsbG93X2FzX2FsdGVy
+        bmF0aXZlIjpmYWxzZSwicGF5bWVudF9jb21wYW5pZXMiOltdLCJtYXhpbXVt
+        X2F0dGVtcHRzIjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxNy0wNy0wNVQxNToz
+        Mjo1NC4wMDAtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wNy0wNVQxNToz
+        Mjo1NC4wMDAtMDM6MDAifV19
+    http_version: 
+  recorded_at: Mon, 04 Sep 2017 14:19:34 GMT
+recorded_with: VCR 3.0.3
