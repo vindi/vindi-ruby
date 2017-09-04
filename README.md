@@ -24,7 +24,7 @@ Os métodos da API estão disponíveis atraves dos métodos da instancia de um c
 ``` 
 
 ### Consumindo recursos
-Os recursos são fornecidos através do objeto de retono e os campos retornados podem ser acessados pela notação de objetos ou attributos de um Hash 
+Os recursos são fornecidos através do objeto de retono e os campos retornados podem ser acessados pela notação de attributos de um Hash 
 
 ```ruby
   # Listando planos de um lojista

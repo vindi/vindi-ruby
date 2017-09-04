@@ -9,7 +9,7 @@ module Vindi
       # @return [Array<Hash>] A list of customers for a merchant.
       # @example Get all customers from merchant vindi
       def list_customers(options = {})
-        get 'customers', options
+        get('customers', options)[:customers]
       end
       
       # Get a single customer from a merchant
@@ -20,7 +20,7 @@ module Vindi
       # @example Get customer #2 from vindi
       #   client.customer(2)
       def customer(customer_id, options = {})
-        get "customers/#{customer_id}", options
+        get("customers/#{customer_id}", options)[:customer]
       end
 
       # Create a customer for a merchant vindi
@@ -31,7 +31,7 @@ module Vindi
       # @example Create a customer for a merchant vindi
       #   client.create_customer(name: 'John Doe', email: 'john.doe@mail.com')
       def create_customer(options = {})
-        post "customers", options
+        post('customers', options)[:customer]
       end
 
       # Edit a customer
@@ -42,7 +42,7 @@ module Vindi
       # @example update customer #2
       #   client.update_customer(2, name: 'Joana Doe', email: 'johanadoes@mail.com')
       def update_customer(customer_id, options = {})
-        put "customers/#{customer_id}", options
+        put("customers/#{customer_id}", options)[:customer]
       end
 
       # Delete a customer from merchant vindi
@@ -54,7 +54,7 @@ module Vindi
       # @example Delete customer #2
       #   client.delete_customer(2)
       def delete_customer(customer_id, options = {})
-        delete "customers/#{customer_id}", options
+        delete("customers/#{customer_id}", options)[:customer]
       end
     end
   end

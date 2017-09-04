@@ -8,7 +8,7 @@ RSpec.describe Vindi::Client::Plan do
       VCR.use_cassette("rest/plans/list_plans") do
         list_plans_response = client.list_plans
         assert_requested :get, vindi_url("plans")
-        expect(list_plans_response[:plans]).to be_kind_of(Array)
+        expect(list_plans_response).to be_kind_of(Array)
       end
     end
   end
@@ -18,7 +18,7 @@ RSpec.describe Vindi::Client::Plan do
       VCR.use_cassette("rest/plans/plan") do
         plan_response = client.plan(15)
         assert_requested :get, vindi_url("plans/15")
-        expect(plan_response[:plan]).to be_kind_of(Hash)
+        expect(plan_response).to be_kind_of(Hash)
       end
     end
   end
@@ -32,7 +32,7 @@ RSpec.describe Vindi::Client::Plan do
 
         plan_response = client.create_plan(plan_attributes)
         assert_requested :post, vindi_url("plans")
-        expect(plan_response[:plan][:name]).to eq('awesome plan')
+        expect(plan_response[:name]).to eq('awesome plan')
       end
     end
   end
@@ -43,7 +43,7 @@ RSpec.describe Vindi::Client::Plan do
         plan_attributes = { name: 'default plan' }
         plan_response = client.update_plan(15, plan_attributes)
         assert_requested :put, vindi_url("plans/15")
-        expect(plan_response[:plan][:name]).to eq('default plan')
+        expect(plan_response[:name]).to eq('default plan')
       end
     end
   end

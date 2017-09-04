@@ -11,7 +11,7 @@ module Vindi
       # @return [Array<Hash>] A list of plans for a merchant.
       # @example Get all plans from merchant vindi
       def list_plans(options = {})
-        get('plans', options)
+        get('plans', options)[:plans]
       end
       
       # Get a single plan from a merchant
@@ -22,7 +22,7 @@ module Vindi
       # @example Get plan #2 from vindi
       #   client.plan(2)
       def plan(plan_id, options = {})
-        get "plans/#{plan_id}", options
+        get("plans/#{plan_id}", options)[:plan]
       end
 
       # Create a plan for a merchant vindi
@@ -33,7 +33,7 @@ module Vindi
       # @example Create a plan for a merchant vindi
       #   client.create_plan(name: 'My Plan', interval: 12)
       def create_plan(options = {})
-        post "plans", options
+        post('plans', options)[:plan]
       end
 
       # Edit a plan
@@ -44,7 +44,7 @@ module Vindi
       # @example Update plan #2
       #   client.update_plan(2, name: 'My Plan', interval: 3)
       def update_plan(plan_id, options = {})
-        put "plans/#{plan_id}", options
+        put("plans/#{plan_id}", options)[:plan]
       end
     end
   end

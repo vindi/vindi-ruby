@@ -8,7 +8,7 @@ RSpec.describe Vindi::Client::Product do
       VCR.use_cassette("rest/products/list_products") do
         list_products_response = client.list_products
         assert_requested :get, vindi_url("products")
-        expect(list_products_response[:products]).to be_kind_of(Array)
+        expect(list_products_response).to be_kind_of(Array)
       end
     end
   end
@@ -18,7 +18,7 @@ RSpec.describe Vindi::Client::Product do
       VCR.use_cassette("rest/products/product") do
         product_response = client.product(26)
         assert_requested :get, vindi_url("products/26")
-        expect(product_response[:product]).to be_kind_of(Hash)
+        expect(product_response).to be_kind_of(Hash)
       end
     end
   end
@@ -29,7 +29,7 @@ RSpec.describe Vindi::Client::Product do
         product_attributes = { name: 'tshirt', pricing_schema: { price: 100 } }
         product_response = client.create_product(product_attributes)
         assert_requested :post, vindi_url("products")
-        expect(product_response[:product][:name]).to eq('tshirt')
+        expect(product_response[:name]).to eq('tshirt')
       end
     end
   end
@@ -40,7 +40,7 @@ RSpec.describe Vindi::Client::Product do
         product_attributes = { name: 't-shirt', pricing_schema: { price: 100 } }
         product_response = client.update_product(26, product_attributes)
         assert_requested :put, vindi_url("products/26")
-        expect(product_response[:product][:name]).to eq('t-shirt')
+        expect(product_response[:name]).to eq('t-shirt')
       end
     end
   end
