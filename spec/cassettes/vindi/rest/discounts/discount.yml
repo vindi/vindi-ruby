@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/discounts/14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 04 Sep 2017 19:01:41 GMT
+      Etag:
+      - W/"7f04565476d43febf0fe894314b6a4a3"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1504551761'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=07681e067e55157ee37bf7e848d4d6d4--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 6a0885b5-e624-49c9-8cea-f068c889594c
+      X-Runtime:
+      - '0.018328'
+      Content-Length:
+      - '293'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"discount":{"id":14,"discount_type":"percentage","percentage":"10.0","amount":"1.0","quantity":1,"cycles":1,"status":"active","created_at":"2017-09-04T15:56:09.000-03:00","updated_at":"2017-09-04T15:56:09.000-03:00","product_item":{"id":118,"product":{"id":26,"name":"t-shirt","code":null}}}}'
+    http_version: 
+  recorded_at: Mon, 04 Sep 2017 19:01:41 GMT
+recorded_with: VCR 3.0.3
