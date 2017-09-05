@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://staging-app.vindi.com.br/api/v1/bills/475
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 05 Sep 2017 19:56:56 GMT
+      Etag:
+      - W/"c6d3458cd44f5528cfe148e1c639ee47"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1504641476'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=1917a18b81fc33b24262900572d5ffae--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 08bb07be-948e-4bba-80cb-8254802b947a
+      X-Runtime:
+      - '0.095816'
+      Content-Length:
+      - '1147'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJiaWxsIjp7ImlkIjo0NzUsImNvZGUiOiJWaWRlIiwiYW1vdW50IjoiMC4w
+        IiwiaW5zdGFsbG1lbnRzIjoxLCJzdGF0dXMiOiJjYW5jZWxlZCIsInNlZW5f
+        YXQiOm51bGwsImJpbGxpbmdfYXQiOm51bGwsImR1ZV9hdCI6IjIwMTctMDkt
+        MDhUMjM6NTk6NTkuMDAwLTAzOjAwIiwidXJsIjoiaHR0cHM6Ly9zdGFnaW5n
+        LWFwcC52aW5kaS5jb20uYnIvY3VzdG9tZXIvYmlsbHMvNDc1P3Rva2VuPWMw
+        ZDJkMTUzLTdiNGYtNDI4OC1iZTQ1LTM4NTVjNTM5YWYxZCIsImNyZWF0ZWRf
+        YXQiOiIyMDE3LTA5LTA1VDE2OjUzOjExLjAwMC0wMzowMCIsInVwZGF0ZWRf
+        YXQiOiIyMDE3LTA5LTA1VDE2OjU2OjU2LjMwMi0wMzowMCIsImJpbGxfaXRl
+        bXMiOlt7ImlkIjo3NzUsImFtb3VudCI6IjEwMC4wIiwicXVhbnRpdHkiOm51
+        bGwsInByaWNpbmdfcmFuZ2VfaWQiOm51bGwsImRlc2NyaXB0aW9uIjoiIiwi
+        cHJpY2luZ19zY2hlbWEiOm51bGwsInByb2R1Y3QiOnsiaWQiOjQ4LCJuYW1l
+        IjoidC1zaGlydCBvbmUiLCJjb2RlIjpudWxsfSwicHJvZHVjdF9pdGVtIjpu
+        dWxsLCJkaXNjb3VudCI6bnVsbH1dLCJjaGFyZ2VzIjpbeyJpZCI6NDc0LCJh
+        bW91bnQiOiIxMDAuMCIsInN0YXR1cyI6ImNhbmNlbGVkIiwiZHVlX2F0Ijoi
+        MjAxNy0wOS0wOFQyMzo1OTo1OS4wMDAtMDM6MDAiLCJwYWlkX2F0IjpudWxs
+        LCJpbnN0YWxsbWVudHMiOjEsImF0dGVtcHRfY291bnQiOjAsIm5leHRfYXR0
+        ZW1wdCI6bnVsbCwicHJpbnRfdXJsIjpudWxsLCJjcmVhdGVkX2F0IjoiMjAx
+        Ny0wOS0wNVQxNjo1MzoxMS4wMDAtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAx
+        Ny0wOS0wNVQxNjo1Njo1Ni4wMDAtMDM6MDAiLCJsYXN0X3RyYW5zYWN0aW9u
+        IjpudWxsLCJwYXltZW50X21ldGhvZCI6eyJpZCI6MTMsInB1YmxpY19uYW1l
+        IjoiQ2FydMOjbyBkZSBjcsOpZGl0byIsIm5hbWUiOiJDYXJ0w6NvIGRlIGNy
+        w6lkaXRvIiwiY29kZSI6ImNyZWRpdF9jYXJkIiwidHlwZSI6IlBheW1lbnRN
+        ZXRob2Q6OkNyZWRpdENhcmQifX1dLCJjdXN0b21lciI6eyJpZCI6Mzk2LCJu
+        YW1lIjoiSmFuZSBEb2UiLCJlbWFpbCI6IiIsImNvZGUiOm51bGx9LCJwZXJp
+        b2QiOm51bGwsInN1YnNjcmlwdGlvbiI6bnVsbCwibWV0YWRhdGEiOnt9LCJw
+        YXltZW50X3Byb2ZpbGUiOm51bGx9fQ==
+    http_version: 
+  recorded_at: Tue, 05 Sep 2017 19:56:56 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://staging-app.vindi.com.br/api/v1/bills/481/invoice
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 05 Sep 2017 20:37:43 GMT
+      Etag:
+      - W/"33759ee5ac9aa7614dc9e1c2f9ada20c"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1504643923'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=aa4c3e5e677a70b10ca503f89807bd41--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 8760f0a2-ac01-4558-827b-687a98f0d1ee
+      X-Runtime:
+      - '0.068644'
+      Content-Length:
+      - '395'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"invoices":[{"id":101,"amount":"250.0","status":"processing","integration_invoice_id":null,"integration_reference":null,"print_url":null,"description":null,"settings":null,"issued_at":null,"scheduled_at":null,"created_at":"2017-09-05T17:37:43.422-03:00","updated_at":"2017-09-05T17:37:43.422-03:00","bill":{"id":481,"code":null},"customer":{"id":396,"name":"Jane
+        Doe","email":"","code":null}}]}'
+    http_version: 
+  recorded_at: Tue, 05 Sep 2017 20:37:43 GMT
+recorded_with: VCR 3.0.3
