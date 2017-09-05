@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://staging-app.vindi.com.br/api/v1/periods/360
+    body:
+      encoding: UTF-8
+      string: billing_at=27%2F09%2F2017
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 05 Sep 2017 17:01:00 GMT
+      Etag:
+      - W/"f1cd7fffed96fdd42b8973c5506c25b1"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '117'
+      Rate-Limit-Reset:
+      - '1504630919'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=b55dff0f3703c47f0591650119e579e7--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 0d37550e-b522-4114-b7be-4cd83b064965
+      X-Runtime:
+      - '0.036458'
+      Content-Length:
+      - '759'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"period":{"id":360,"billing_at":"2017-09-27T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-01T00:00:00.000-03:00","end_at":"2017-09-30T23:59:59.000-03:00","duration":2591999,"customer":{"id":21,"name":"larissa
+        amancio","email":"lars@live.fr","code":"codigo externo lariiie"},"subscription":{"id":61,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":21,"name":"larissa amancio","email":"lars@live.fr","code":"codigo
+        externo lariiie"}},"usages":[{"id":624,"quantity":1,"description":null,"created_at":"2017-09-01T14:59:54.000-03:00","metadata":{},"product_item":{"id":118,"product":{"id":26,"name":"t-shirt","code":null}},"bill":null}],"created_at":"2017-09-01T14:59:54.000-03:00","updated_at":"2017-09-05T13:45:52.000-03:00"}}'
+    http_version: 
+  recorded_at: Tue, 05 Sep 2017 17:01:00 GMT
+recorded_with: VCR 3.0.3

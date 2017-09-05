@@ -5,6 +5,7 @@ require 'vindi/rest/payment_method'
 require 'vindi/rest/discount'
 require 'vindi/rest/subscription'
 require 'vindi/rest/product_item'
+require 'vindi/rest/period'
 
 module Vindi
   module Rest
@@ -15,5 +16,6 @@ module Vindi
     include Vindi::Rest::Discount
     include Vindi::Rest::Subscription
     include Vindi::Rest::ProductItem
+    include Vindi::Rest::Period
   end
 end

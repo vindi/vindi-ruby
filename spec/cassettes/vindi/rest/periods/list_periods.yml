@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/periods
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 05 Sep 2017 17:00:59 GMT
+      Etag:
+      - W/"7307d5b7b94e8fecda9bb39f069579ca"
+      Per-Page:
+      - '25'
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1504630919'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=3cd329f0ddf3739d73150bc456fd6b4b--200; path=/; max-age=5; HttpOnly
+      Total:
+      - '13'
+      X-Request-Id:
+      - f948b8c8-03a7-49a0-98c7-4a48f7a4f109
+      X-Runtime:
+      - '0.069607'
+      Content-Length:
+      - '5639'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"periods":[{"id":360,"billing_at":"2017-09-27T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-01T00:00:00.000-03:00","end_at":"2017-09-30T23:59:59.000-03:00","duration":2591999,"subscription":{"id":61,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":21,"name":"larissa amancio","email":"lars@live.fr","code":"codigo
+        externo lariiie"}},"created_at":"2017-09-01T14:59:54.000-03:00","updated_at":"2017-09-05T13:45:52.000-03:00"},{"id":363,"billing_at":"2017-10-01T00:00:00.000-03:00","cycle":2,"start_at":"2017-10-01T00:00:00.000-03:00","end_at":"2017-10-31T23:59:59.000-02:00","duration":2674799,"subscription":{"id":61,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":21,"name":"larissa amancio","email":"lars@live.fr","code":"codigo
+        externo lariiie"}},"created_at":"2017-09-05T09:47:51.000-03:00","updated_at":"2017-09-05T09:47:51.000-03:00"},{"id":364,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":64,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:12:00.000-03:00","updated_at":"2017-09-05T11:12:00.000-03:00"},{"id":365,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":65,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:13:34.000-03:00","updated_at":"2017-09-05T11:13:34.000-03:00"},{"id":366,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":66,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:15:32.000-03:00","updated_at":"2017-09-05T11:15:32.000-03:00"},{"id":367,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":67,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:16:06.000-03:00","updated_at":"2017-09-05T11:16:06.000-03:00"},{"id":368,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":68,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:21:02.000-03:00","updated_at":"2017-09-05T11:21:02.000-03:00"},{"id":369,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":69,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:21:21.000-03:00","updated_at":"2017-09-05T11:21:21.000-03:00"},{"id":370,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":70,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:22:58.000-03:00","updated_at":"2017-09-05T11:22:58.000-03:00"},{"id":371,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":71,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:30:58.000-03:00","updated_at":"2017-09-05T11:30:58.000-03:00"},{"id":372,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":72,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:31:54.000-03:00","updated_at":"2017-09-05T11:31:54.000-03:00"},{"id":373,"billing_at":"2017-09-05T00:00:00.000-03:00","cycle":1,"start_at":"2017-09-05T00:00:00.000-03:00","end_at":"2017-10-04T23:59:59.000-03:00","duration":2591999,"subscription":{"id":73,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:33:34.000-03:00","updated_at":"2017-09-05T11:33:34.000-03:00"},{"id":374,"billing_at":"2017-10-05T00:00:00.000-03:00","cycle":2,"start_at":"2017-10-05T00:00:00.000-03:00","end_at":"2017-11-04T23:59:59.000-02:00","duration":2674799,"subscription":{"id":65,"code":null,"plan":{"id":15,"name":"default
+        plan","code":null},"customer":{"id":2,"name":"Johana Doe","email":"email@email.com","code":"ooooooo"}},"created_at":"2017-09-05T11:43:47.000-03:00","updated_at":"2017-09-05T11:43:47.000-03:00"}]}'
+    http_version: 
+  recorded_at: Tue, 05 Sep 2017 17:00:59 GMT
+recorded_with: VCR 3.0.3
