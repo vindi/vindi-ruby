@@ -22,7 +22,9 @@ module Vindi
       # @see https://vindi.github.io/api-docs/dist/#!/discounts/POST_version_discounts_format 
       # @return [Hash] The discount created
       # @example Create a discount for a merchant vindi
-      #   client.create_discount(name: 'John Doe', email: 'john.doe@mail.com')
+      #   client.create_discount(product_item_id: 118,
+      #                          discount_type: "percentage", percentage: 10,
+      #                          amount: 1, quantity: 1, cycles: 1)
       def create_discount(options = {})
         post('discounts', options)[:discount]
       end

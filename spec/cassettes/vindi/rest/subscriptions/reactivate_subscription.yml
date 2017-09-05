@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://staging-app.vindi.com.br/api/v1/subscriptions/61/reactivate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 05 Sep 2017 14:41:37 GMT
+      Etag:
+      - W/"5df373839b94342d24aa8f0ecb20d8be"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '118'
+      Rate-Limit-Reset:
+      - '1504622538'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=14159e5c2ffd5e2f36d4220b0e6ac541--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - fad222c5-c4c5-4b40-9e1d-761c1c5f8290
+      X-Runtime:
+      - '0.078383'
+      Content-Length:
+      - '1470'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdWJzY3JpcHRpb24iOnsiaWQiOjYxLCJzdGF0dXMiOiJhY3RpdmUiLCJz
+        dGFydF9hdCI6IjIwMTctMDktMDFUMDA6MDA6MDAuMDAwLTAzOjAwIiwiZW5k
+        X2F0IjpudWxsLCJuZXh0X2JpbGxpbmdfYXQiOiIyMDE3LTEwLTAxVDAwOjAw
+        OjAwLjAwMC0wMzowMCIsIm92ZXJkdWVfc2luY2UiOm51bGwsImNvZGUiOm51
+        bGwsImNhbmNlbF9hdCI6bnVsbCwiaW50ZXJ2YWwiOiJtb250aHMiLCJpbnRl
+        cnZhbF9jb3VudCI6MSwiYmlsbGluZ190cmlnZ2VyX3R5cGUiOiJiZWdpbm5p
+        bmdfb2ZfcGVyaW9kIiwiYmlsbGluZ190cmlnZ2VyX2RheSI6MCwiYmlsbGlu
+        Z19jeWNsZXMiOm51bGwsImluc3RhbGxtZW50cyI6MSwiY3JlYXRlZF9hdCI6
+        IjIwMTctMDktMDFUMTQ6NTk6NTQuMDAwLTAzOjAwIiwidXBkYXRlZF9hdCI6
+        IjIwMTctMDktMDVUMTE6NDE6MzcuMDAwLTAzOjAwIiwiY3VzdG9tZXIiOnsi
+        aWQiOjIxLCJuYW1lIjoibGFyaXNzYSBhbWFuY2lvIiwiZW1haWwiOiJsYXJz
+        QGxpdmUuZnIiLCJjb2RlIjoiY29kaWdvIGV4dGVybm8gbGFyaWlpZSJ9LCJw
+        bGFuIjp7ImlkIjoxNSwibmFtZSI6ImRlZmF1bHQgcGxhbiIsImNvZGUiOm51
+        bGx9LCJwcm9kdWN0X2l0ZW1zIjpbeyJpZCI6MTE4LCJzdGF0dXMiOiJhY3Rp
+        dmUiLCJjeWNsZXMiOjMsInF1YW50aXR5IjoxLCJjcmVhdGVkX2F0IjoiMjAx
+        Ny0wOS0wMVQxNDo1OTo1NC4wMDAtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAx
+        Ny0wOS0wMVQxNDo1OTo1NC4wMDAtMDM6MDAiLCJwcm9kdWN0Ijp7ImlkIjoy
+        NiwibmFtZSI6InQtc2hpcnQiLCJjb2RlIjpudWxsfSwicHJpY2luZ19zY2hl
+        bWEiOnsiaWQiOjkzLCJzaG9ydF9mb3JtYXQiOiJSJCAxMiwwMCIsInByaWNl
+        IjoiMTIuMCIsIm1pbmltdW1fcHJpY2UiOm51bGwsInNjaGVtYV90eXBlIjoi
+        ZmxhdCIsInByaWNpbmdfcmFuZ2VzIjpbXSwiY3JlYXRlZF9hdCI6IjIwMTct
+        MDctMTlUMjE6MDk6MzkuMDAwLTAzOjAwIn0sImRpc2NvdW50cyI6W3siaWQi
+        OjE1LCJkaXNjb3VudF90eXBlIjoicGVyY2VudGFnZSIsInBlcmNlbnRhZ2Ui
+        OiIxMC4wIiwiYW1vdW50IjoiMS4wIiwicXVhbnRpdHkiOjEsImN5Y2xlcyI6
+        MX1dfV0sInBheW1lbnRfbWV0aG9kIjp7ImlkIjoxMywicHVibGljX25hbWUi
+        OiJDYXJ0w6NvIGRlIGNyw6lkaXRvIiwibmFtZSI6IkNhcnTDo28gZGUgY3LD
+        qWRpdG8iLCJjb2RlIjoiY3JlZGl0X2NhcmQiLCJ0eXBlIjoiUGF5bWVudE1l
+        dGhvZDo6Q3JlZGl0Q2FyZCJ9LCJjdXJyZW50X3BlcmlvZCI6eyJpZCI6MzYw
+        LCJiaWxsaW5nX2F0IjoiMjAxNy0wOS0wMVQwMDowMDowMC4wMDAtMDM6MDAi
+        LCJjeWNsZSI6MSwic3RhcnRfYXQiOiIyMDE3LTA5LTAxVDAwOjAwOjAwLjAw
+        MC0wMzowMCIsImVuZF9hdCI6IjIwMTctMDktMzBUMjM6NTk6NTkuMDAwLTAz
+        OjAwIiwiZHVyYXRpb24iOjI1OTE5OTl9LCJtZXRhZGF0YSI6e30sInBheW1l
+        bnRfcHJvZmlsZSI6bnVsbH0sImJpbGwiOm51bGx9
+    http_version: 
+  recorded_at: Tue, 05 Sep 2017 14:41:37 GMT
+recorded_with: VCR 3.0.3

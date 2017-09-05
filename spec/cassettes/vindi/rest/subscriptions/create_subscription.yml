@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://staging-app.vindi.com.br/api/v1/subscriptions
+    body:
+      encoding: UTF-8
+      string: customer_id=2&payment_method_code=credit_card&plan_id=15&product_items%5B%5D%5Bproduct_id%5D=26
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 05 Sep 2017 14:33:34 GMT
+      Etag:
+      - W/"c08f7c26b537ea45f5d17189259fa50d"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '117'
+      Rate-Limit-Reset:
+      - '1504622072'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=00e8eccd753fc6c84426c635e05fe001--201; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 8019cb31-c593-490c-9d30-a2d13d6c9ef1
+      X-Runtime:
+      - '0.359572'
+      Content-Length:
+      - '2111'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdWJzY3JpcHRpb24iOnsiaWQiOjczLCJzdGF0dXMiOiJhY3RpdmUiLCJz
+        dGFydF9hdCI6IjIwMTctMDktMDVUMDA6MDA6MDAuMDAwLTAzOjAwIiwiZW5k
+        X2F0IjpudWxsLCJuZXh0X2JpbGxpbmdfYXQiOiIyMDE3LTEwLTA1VDAwOjAw
+        OjAwLjAwMC0wMzowMCIsIm92ZXJkdWVfc2luY2UiOm51bGwsImNvZGUiOm51
+        bGwsImNhbmNlbF9hdCI6bnVsbCwiaW50ZXJ2YWwiOiJtb250aHMiLCJpbnRl
+        cnZhbF9jb3VudCI6MSwiYmlsbGluZ190cmlnZ2VyX3R5cGUiOiJiZWdpbm5p
+        bmdfb2ZfcGVyaW9kIiwiYmlsbGluZ190cmlnZ2VyX2RheSI6MCwiYmlsbGlu
+        Z19jeWNsZXMiOm51bGwsImluc3RhbGxtZW50cyI6MSwiY3JlYXRlZF9hdCI6
+        IjIwMTctMDktMDVUMTE6MzM6MzQuMTY3LTAzOjAwIiwidXBkYXRlZF9hdCI6
+        IjIwMTctMDktMDVUMTE6MzM6MzQuMTY3LTAzOjAwIiwiY3VzdG9tZXIiOnsi
+        aWQiOjIsIm5hbWUiOiJKb2hhbmEgRG9lIiwiZW1haWwiOiJlbWFpbEBlbWFp
+        bC5jb20iLCJjb2RlIjoib29vb29vbyJ9LCJwbGFuIjp7ImlkIjoxNSwibmFt
+        ZSI6ImRlZmF1bHQgcGxhbiIsImNvZGUiOm51bGx9LCJwcm9kdWN0X2l0ZW1z
+        IjpbeyJpZCI6MTMxLCJzdGF0dXMiOiJhY3RpdmUiLCJjeWNsZXMiOm51bGws
+        InF1YW50aXR5IjoxLCJjcmVhdGVkX2F0IjoiMjAxNy0wOS0wNVQxMTozMzoz
+        NC4wMDAtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wOS0wNVQxMTozMzoz
+        NC4wMDAtMDM6MDAiLCJwcm9kdWN0Ijp7ImlkIjoyNiwibmFtZSI6InQtc2hp
+        cnQiLCJjb2RlIjpudWxsfSwicHJpY2luZ19zY2hlbWEiOnsiaWQiOjIyNSwi
+        c2hvcnRfZm9ybWF0IjoiUiQgMTAwLDAwIiwicHJpY2UiOiIxMDAuMCIsIm1p
+        bmltdW1fcHJpY2UiOm51bGwsInNjaGVtYV90eXBlIjoiZmxhdCIsInByaWNp
+        bmdfcmFuZ2VzIjpbXSwiY3JlYXRlZF9hdCI6IjIwMTctMDktMDFUMTk6NDI6
+        NDcuMDAwLTAzOjAwIn0sImRpc2NvdW50cyI6W119XSwicGF5bWVudF9tZXRo
+        b2QiOnsiaWQiOjEzLCJwdWJsaWNfbmFtZSI6IkNhcnTDo28gZGUgY3LDqWRp
+        dG8iLCJuYW1lIjoiQ2FydMOjbyBkZSBjcsOpZGl0byIsImNvZGUiOiJjcmVk
+        aXRfY2FyZCIsInR5cGUiOiJQYXltZW50TWV0aG9kOjpDcmVkaXRDYXJkIn0s
+        ImN1cnJlbnRfcGVyaW9kIjp7ImlkIjozNzMsImJpbGxpbmdfYXQiOiIyMDE3
+        LTA5LTA1VDAwOjAwOjAwLjAwMC0wMzowMCIsImN5Y2xlIjoxLCJzdGFydF9h
+        dCI6IjIwMTctMDktMDVUMDA6MDA6MDAuMDAwLTAzOjAwIiwiZW5kX2F0Ijoi
+        MjAxNy0xMC0wNFQyMzo1OTo1OS4wMDAtMDM6MDAiLCJkdXJhdGlvbiI6MjU5
+        MTk5OX0sIm1ldGFkYXRhIjp7fSwicGF5bWVudF9wcm9maWxlIjpudWxsfSwi
+        YmlsbCI6eyJpZCI6NDUzLCJjb2RlIjpudWxsLCJhbW91bnQiOiIxMDAuMCIs
+        Imluc3RhbGxtZW50cyI6MSwic3RhdHVzIjoicGVuZGluZyIsImJpbGxpbmdf
+        YXQiOm51bGwsImR1ZV9hdCI6IjIwMTctMDktMDhUMjM6NTk6NTkuMDAwLTAz
+        OjAwIiwidXJsIjoiaHR0cHM6Ly9zdGFnaW5nLWFwcC52aW5kaS5jb20uYnIv
+        Y3VzdG9tZXIvYmlsbHMvNDUzP3Rva2VuPTM0ZDM4Yjc4LTE3YmMtNDM5NC04
+        NTU5LTI4MjAwMzM1ZDBhYSIsImNyZWF0ZWRfYXQiOiIyMDE3LTA5LTA1VDEx
+        OjMzOjM0LjAwMC0wMzowMCIsImNoYXJnZXMiOlt7ImlkIjo0NTIsImFtb3Vu
+        dCI6IjEwMC4wIiwic3RhdHVzIjoicGVuZGluZyIsImR1ZV9hdCI6IjIwMTct
+        MDktMDhUMjM6NTk6NTkuMDAwLTAzOjAwIiwicGFpZF9hdCI6bnVsbCwiaW5z
+        dGFsbG1lbnRzIjoxLCJhdHRlbXB0X2NvdW50IjowLCJuZXh0X2F0dGVtcHQi
+        Om51bGwsInByaW50X3VybCI6bnVsbCwiY3JlYXRlZF9hdCI6IjIwMTctMDkt
+        MDVUMTE6MzM6MzQuMDAwLTAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMTctMDkt
+        MDVUMTE6MzM6MzQuMDAwLTAzOjAwIiwibGFzdF90cmFuc2FjdGlvbiI6bnVs
+        bCwicGF5bWVudF9tZXRob2QiOnsiaWQiOjEzLCJwdWJsaWNfbmFtZSI6IkNh
+        cnTDo28gZGUgY3LDqWRpdG8iLCJuYW1lIjoiQ2FydMOjbyBkZSBjcsOpZGl0
+        byIsImNvZGUiOiJjcmVkaXRfY2FyZCIsInR5cGUiOiJQYXltZW50TWV0aG9k
+        OjpDcmVkaXRDYXJkIn19XSwicGF5bWVudF9wcm9maWxlIjpudWxsfX0=
+    http_version: 
+  recorded_at: Tue, 05 Sep 2017 14:33:34 GMT
+recorded_with: VCR 3.0.3
