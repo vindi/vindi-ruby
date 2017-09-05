@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/product_items/131
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 05 Sep 2017 16:09:36 GMT
+      Etag:
+      - W/"6c479098948c32031e96e035194e312c"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1504627836'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=8288a74f657a2dc1c15502ba76f07ec7--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - a5dce725-4a1f-4718-b7b2-387291225ece
+      X-Runtime:
+      - '0.021367'
+      Content-Length:
+      - '404'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"product_item":{"id":131,"status":"active","cycles":null,"quantity":1,"created_at":"2017-09-05T11:33:34.000-03:00","updated_at":"2017-09-05T11:33:34.000-03:00","product":{"id":26,"name":"t-shirt","code":null},"pricing_schema":{"id":225,"short_format":"R$
+        100,00","price":"100.0","minimum_price":null,"schema_type":"flat","pricing_ranges":[],"created_at":"2017-09-01T19:42:47.000-03:00"},"discounts":[]}}'
+    http_version: 
+  recorded_at: Tue, 05 Sep 2017 16:09:37 GMT
+recorded_with: VCR 3.0.3
