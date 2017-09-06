@@ -7,6 +7,7 @@ require 'vindi/rest/subscription'
 require 'vindi/rest/product_item'
 require 'vindi/rest/period'
 require 'vindi/rest/bill'
+require 'vindi/rest/bill_item'
 
 module Vindi
   module Rest
@@ -19,5 +20,6 @@ module Vindi
     include Vindi::Rest::ProductItem
     include Vindi::Rest::Period
     include Vindi::Rest::Bill
+    include Vindi::Rest::BillItem
   end
 end
