@@ -14,6 +14,7 @@ require 'vindi/rest/payment_profile'
 require 'vindi/rest/usage'
 require 'vindi/rest/movement'
 require 'vindi/rest/invoice'
+require 'vindi/rest/message'
 
 module Vindi
   module Rest
@@ -33,5 +34,6 @@ module Vindi
     include Vindi::Rest::Usage
     include Vindi::Rest::Movement
     include Vindi::Rest::Invoice
+    include Vindi::Rest::Message
   end
 end

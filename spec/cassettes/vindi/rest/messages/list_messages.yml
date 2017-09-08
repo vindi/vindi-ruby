@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/messages
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 08 Sep 2017 17:21:09 GMT
+      Etag:
+      - W/"7fe8dbd70fc45d1831aa699f41c2d15e"
+      Link:
+      - <https://staging-app.vindi.com.br/api/v1/messages?page=2>; rel="last", <https://staging-app.vindi.com.br/api/v1/messages?page=2>;
+        rel="next"
+      Per-Page:
+      - '25'
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1504891329'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=81238f8d8be09b9dcc8a7903304b1334--200; path=/; max-age=5; HttpOnly
+      Total:
+      - '27'
+      X-Request-Id:
+      - 2b15d100-cb0d-4e03-94d2-0e1fc362154a
+      X-Runtime:
+      - '0.124485'
+      Content-Length:
+      - '6418'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"id":12,"notification_type":"email","seen_at":null,"created_at":"2017-07-19T21:09:56.000-03:00","customer":{"id":20,"name":"Wagner
+        Narde","email":"wagner.narde@vindi.com.br","code":null},"charge":{"id":71},"notification":{"id":6,"notification_type":"email"}},{"id":16,"notification_type":"email","seen_at":null,"created_at":"2017-07-23T09:26:02.000-03:00","customer":{"id":20,"name":"Wagner
+        Narde","email":"wagner.narde@vindi.com.br","code":null},"charge":{"id":71},"notification":{"id":7,"notification_type":"email"}},{"id":21,"notification_type":"email","seen_at":null,"created_at":"2017-07-27T09:20:01.000-03:00","customer":{"id":20,"name":"Wagner
+        Narde","email":"wagner.narde@vindi.com.br","code":null},"charge":{"id":71},"notification":{"id":8,"notification_type":"email"}},{"id":128,"notification_type":"email","seen_at":null,"created_at":"2017-09-01T14:59:54.000-03:00","customer":{"id":21,"name":"larissa
+        amancio","email":"lars@live.fr","code":"codigo externo lariiie"},"charge":{"id":436},"notification":{"id":6,"notification_type":"email"}},{"id":129,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:12:00.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":443},"notification":{"id":6,"notification_type":"email"}},{"id":130,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:13:35.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":444},"notification":{"id":6,"notification_type":"email"}},{"id":131,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:15:32.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":445},"notification":{"id":6,"notification_type":"email"}},{"id":132,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:16:06.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":446},"notification":{"id":6,"notification_type":"email"}},{"id":133,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:21:03.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":447},"notification":{"id":6,"notification_type":"email"}},{"id":134,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:21:21.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":448},"notification":{"id":6,"notification_type":"email"}},{"id":135,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:22:58.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":449},"notification":{"id":6,"notification_type":"email"}},{"id":136,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:30:59.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":450},"notification":{"id":6,"notification_type":"email"}},{"id":137,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:31:54.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":451},"notification":{"id":6,"notification_type":"email"}},{"id":138,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T11:33:34.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":452},"notification":{"id":6,"notification_type":"email"}},{"id":139,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T14:14:26.000-03:00","customer":{"id":21,"name":"larissa
+        amancio","email":"lars@live.fr","code":"codigo externo lariiie"},"charge":{"id":455},"notification":{"id":6,"notification_type":"email"}},{"id":140,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T14:18:31.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":456},"notification":{"id":6,"notification_type":"email"}},{"id":141,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T14:21:59.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":457},"notification":{"id":6,"notification_type":"email"}},{"id":142,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T14:36:01.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":458},"notification":{"id":6,"notification_type":"email"}},{"id":143,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T15:27:28.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":466},"notification":{"id":6,"notification_type":"email"}},{"id":144,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T15:27:39.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":467},"notification":{"id":6,"notification_type":"email"}},{"id":146,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T16:00:43.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":469},"notification":{"id":6,"notification_type":"email"}},{"id":147,"notification_type":"email","seen_at":null,"created_at":"2017-09-05T17:12:24.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":481},"notification":{"id":6,"notification_type":"email"}},{"id":148,"notification_type":"email","seen_at":null,"created_at":"2017-09-06T11:07:15.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":488},"notification":{"id":6,"notification_type":"email"}},{"id":149,"notification_type":"email","seen_at":null,"created_at":"2017-09-06T11:14:18.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":489},"notification":{"id":6,"notification_type":"email"}},{"id":150,"notification_type":"email","seen_at":null,"created_at":"2017-09-06T11:17:18.000-03:00","customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"charge":{"id":490},"notification":{"id":6,"notification_type":"email"}}]}'
+    http_version: 
+  recorded_at: Fri, 08 Sep 2017 17:21:09 GMT
+recorded_with: VCR 3.0.3
