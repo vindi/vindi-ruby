@@ -3,12 +3,13 @@ require 'json'
 
 module Vindi
   module Connection
-   
+
     # HTTP client for the Vindi API
     #
     # @return Faraday::Connection
     def http_client
       @http_client = Faraday.new(api_endpoint, connection_options) do |http|
+        http.request(:multipart)
         http.request(:url_encoded)
         http.basic_auth(@key, '')
         http.builder.use @middleware
