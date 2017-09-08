@@ -11,7 +11,7 @@ module Vindi
       def list_bills(options = {})
         get('bills', options)[:bills]
       end
-      
+
       # Get a single bill from a merchant
       #
       # @param bill_id [Integer] ID of the bill
@@ -24,9 +24,9 @@ module Vindi
       end
 
       # Create a bill for a merchant vindi
-      # 
+      #
       # @option options [Hash] :options bill attributes
-      # @see https://vindi.github.io/api-docs/dist/#!/bills/POST_version_bills_format 
+      # @see https://vindi.github.io/api-docs/dist/#!/bills/POST_version_bills_format
       # @return [Hash] The bill created
       # @example Create a bill for a merchant vindi
       #   client.create_bill(customer_id: 2, payment_method_code: "credit_card",
@@ -74,8 +74,8 @@ module Vindi
       # @option options [Hash] :options bill attributes
       # @see https://vindi.github.io/api-docs/dist/#!/bills/PUT_version_bills_id_format
       # @example create  a invoice from bill #2
-      #   client.create_invoice(2)
-      def create_invoice(bill_id, options = {})
+      #   client.create_invoice_from_bill(2)
+      def create_invoice_from_bill(bill_id, options = {})
         post("bills/#{bill_id}/invoice", options)[:invoices]
       end
 

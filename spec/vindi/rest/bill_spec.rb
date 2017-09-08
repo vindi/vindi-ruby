@@ -70,7 +70,7 @@ RSpec.describe Vindi::Client::Bill do
   describe 'create_invoice' do
     it 'returns the invoice generated from bill' do
       VCR.use_cassette("rest/bills/create_invoice") do
-        bill_response = client.create_invoice(481)
+        bill_response = client.create_invoice_from_bill(481)
         assert_requested :post, vindi_url("bills/481/invoice")
         expect(bill_response[0][:status]).to eq('processing')
       end
