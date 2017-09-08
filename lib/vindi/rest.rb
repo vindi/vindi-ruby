@@ -10,6 +10,7 @@ require 'vindi/rest/bill'
 require 'vindi/rest/bill_item'
 require 'vindi/rest/charge'
 require 'vindi/rest/transaction'
+require 'vindi/rest/payment_profile'
 
 module Vindi
   module Rest
@@ -25,5 +26,6 @@ module Vindi
     include Vindi::Rest::BillItem
     include Vindi::Rest::Charge
     include Vindi::Rest::Transaction
+    include Vindi::Rest::PaymentProfile
   end
 end

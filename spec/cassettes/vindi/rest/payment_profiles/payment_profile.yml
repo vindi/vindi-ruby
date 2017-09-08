@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/payment_profiles/18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 08 Sep 2017 13:15:14 GMT
+      Etag:
+      - W/"98ccb323e52cdd2e780ca99b32ea8351"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '118'
+      Rate-Limit-Reset:
+      - '1504876573'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=669e25fda37168cc5418c2d4090fbd5c--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - fcf6abfb-7001-42d7-a991-0d481d19f38c
+      X-Runtime:
+      - '0.020968'
+      Content-Length:
+      - '745'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwYXltZW50X3Byb2ZpbGUiOnsiaWQiOjE4LCJzdGF0dXMiOiJpbmFjdGl2
+        ZSIsImhvbGRlcl9uYW1lIjoiSkFORSBET0UiLCJyZWdpc3RyeV9jb2RlIjpu
+        dWxsLCJiYW5rX2JyYW5jaCI6bnVsbCwiYmFua19hY2NvdW50IjpudWxsLCJj
+        YXJkX2V4cGlyYXRpb24iOiIyMDIwLTEwLTMxVDIzOjU5OjU5LjAwMC0wMjow
+        MCIsImNhcmRfbnVtYmVyX2ZpcnN0X3NpeCI6IjQ0NDQ0NCIsImNhcmRfbnVt
+        YmVyX2xhc3RfZm91ciI6IjQ0NDgiLCJ0b2tlbiI6ImU3NmVlYmE0LTk5ODct
+        NDk2MS05OTlhLWFjOTJiZDhkOTFhMCIsImdhdGV3YXlfdG9rZW4iOiIzNTE5
+        NTBlNS1hZjgxLTQwNDctYTM4YS02YWZjNjBiNWNkZDkiLCJ0eXBlIjoiUGF5
+        bWVudFByb2ZpbGU6OkNyZWRpdENhcmQiLCJjcmVhdGVkX2F0IjoiMjAxNy0w
+        OS0wNlQxMToyNTo1Ni4wMDAtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxNy0w
+        OS0wNlQxMToyNjo1My4wMDAtMDM6MDAiLCJwYXltZW50X2NvbXBhbnkiOnsi
+        aWQiOjEzLCJuYW1lIjoiVmlzYSIsImNvZGUiOiJ2aXNhIn0sInBheW1lbnRf
+        bWV0aG9kIjp7ImlkIjoxMywicHVibGljX25hbWUiOiJDYXJ0w6NvIGRlIGNy
+        w6lkaXRvIiwibmFtZSI6IkNhcnTDo28gZGUgY3LDqWRpdG8iLCJjb2RlIjoi
+        Y3JlZGl0X2NhcmQiLCJ0eXBlIjoiUGF5bWVudE1ldGhvZDo6Q3JlZGl0Q2Fy
+        ZCJ9LCJjdXN0b21lciI6eyJpZCI6MzgyLCJuYW1lIjoiSmFuZSBEb2UiLCJl
+        bWFpbCI6bnVsbCwiY29kZSI6bnVsbH19fQ==
+    http_version: 
+  recorded_at: Fri, 08 Sep 2017 13:15:14 GMT
+recorded_with: VCR 3.0.3
