@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://staging-app.vindi.com.br/api/v1/charges/513/refund
+    body:
+      encoding: UTF-8
+      string: amount=10
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 08 Sep 2017 12:26:52 GMT
+      Etag:
+      - W/"b3336780073a27dc84c70dc3cc26ff85"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '117'
+      Rate-Limit-Reset:
+      - '1504873618'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=63160e4ef000a37a0a65f4c975448f61--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - df70525c-4eb6-4851-9bb1-91368c3f46bc
+      X-Runtime:
+      - '0.095907'
+      Content-Length:
+      - '922'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"charge":{"id":513,"amount":"19.9","status":"paid","due_at":"2017-09-08T23:59:59.000-03:00","paid_at":"2017-09-08T00:00:00.000-03:00","installments":1,"attempt_count":2,"next_attempt":null,"print_url":null,"created_at":"2017-09-08T09:21:12.000-03:00","updated_at":"2017-09-08T09:21:42.000-03:00","last_transaction":{"id":496,"transaction_type":"refund","status":"success","amount":"10.0","installments":null,"gateway_message":null,"gateway_response_code":null,"gateway_authorization":"","gateway_transaction_id":null,"gateway_response_fields":null,"fraud_detector_score":null,"fraud_detector_status":null,"fraud_detector_id":null,"created_at":"2017-09-08T09:26:52.000-03:00","gateway":null,"payment_profile":null},"payment_method":{"id":14,"public_name":"Dinheiro","name":"Dinheiro","code":"cash","type":"PaymentMethod::Cash"},"bill":{"id":509,"code":null},"customer":{"id":396,"name":"Jane
+        Doe","email":"","code":null}}}'
+    http_version: 
+  recorded_at: Fri, 08 Sep 2017 12:26:52 GMT
+recorded_with: VCR 3.0.3

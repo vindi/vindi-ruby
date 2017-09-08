@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://staging-app.vindi.com.br/api/v1/charges/71
+    body:
+      encoding: UTF-8
+      string: installments=2
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 06 Sep 2017 13:33:28 GMT
+      Etag:
+      - W/"dc0fa4d7cf34746d85339971987806ba"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '117'
+      Rate-Limit-Reset:
+      - '1504704866'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=36717f6c2d3f1fc12d1ff6f429fe3838--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 48b2f217-a989-45bc-befc-5ea9759e117f
+      X-Runtime:
+      - '0.051732'
+      Content-Length:
+      - '565'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjaGFyZ2UiOnsiaWQiOjcxLCJhbW91bnQiOiIxMi4wIiwic3RhdHVzIjoi
+        cGVuZGluZyIsImR1ZV9hdCI6IjIwMTctMDctMjJUMjM6NTk6NTkuMDAwLTAz
+        OjAwIiwicGFpZF9hdCI6bnVsbCwiaW5zdGFsbG1lbnRzIjoyLCJhdHRlbXB0
+        X2NvdW50IjowLCJuZXh0X2F0dGVtcHQiOm51bGwsInByaW50X3VybCI6bnVs
+        bCwiY3JlYXRlZF9hdCI6IjIwMTctMDctMTlUMjE6MDk6NTYuMDAwLTAzOjAw
+        IiwidXBkYXRlZF9hdCI6IjIwMTctMDktMDZUMTA6MzM6MjcuOTk4LTAzOjAw
+        IiwibGFzdF90cmFuc2FjdGlvbiI6bnVsbCwicGF5bWVudF9tZXRob2QiOnsi
+        aWQiOjEzLCJwdWJsaWNfbmFtZSI6IkNhcnTDo28gZGUgY3LDqWRpdG8iLCJu
+        YW1lIjoiQ2FydMOjbyBkZSBjcsOpZGl0byIsImNvZGUiOiJjcmVkaXRfY2Fy
+        ZCIsInR5cGUiOiJQYXltZW50TWV0aG9kOjpDcmVkaXRDYXJkIn0sImJpbGwi
+        OnsiaWQiOjcxLCJjb2RlIjpudWxsfSwiY3VzdG9tZXIiOnsiaWQiOjIwLCJu
+        YW1lIjoiV2FnbmVyIE5hcmRlIiwiZW1haWwiOiJ3YWduZXIubmFyZGVAdmlu
+        ZGkuY29tLmJyIiwiY29kZSI6bnVsbH19fQ==
+    http_version: 
+  recorded_at: Wed, 06 Sep 2017 13:33:28 GMT
+recorded_with: VCR 3.0.3

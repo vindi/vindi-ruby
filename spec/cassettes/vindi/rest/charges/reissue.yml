@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://staging-app.vindi.com.br/api/v1/charges/447/reissue
+    body:
+      encoding: UTF-8
+      string: payment_method_code=debit_card
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 06 Sep 2017 14:17:18 GMT
+      Etag:
+      - W/"a6c8e753933a34392393102ecc74e23f"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1504707498'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=f66acd707151c4373f3879c544339e82--201; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - e2a4db6a-9951-49d3-9b0d-378e6d084893
+      X-Runtime:
+      - '0.205428'
+      Content-Length:
+      - '548'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjaGFyZ2UiOnsiaWQiOjQ5MCwiYW1vdW50IjoiMTAwLjAiLCJzdGF0dXMi
+        OiJwZW5kaW5nIiwiZHVlX2F0IjoiMjAxNy0wOS0wOVQyMzo1OTo1OS4wMDAt
+        MDM6MDAiLCJwYWlkX2F0IjpudWxsLCJpbnN0YWxsbWVudHMiOjEsImF0dGVt
+        cHRfY291bnQiOjAsIm5leHRfYXR0ZW1wdCI6bnVsbCwicHJpbnRfdXJsIjpu
+        dWxsLCJjcmVhdGVkX2F0IjoiMjAxNy0wOS0wNlQxMToxNzoxOC4wMDAtMDM6
+        MDAiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wOS0wNlQxMToxNzoxOC4wMDAtMDM6
+        MDAiLCJsYXN0X3RyYW5zYWN0aW9uIjpudWxsLCJwYXltZW50X21ldGhvZCI6
+        eyJpZCI6NDIsInB1YmxpY19uYW1lIjoiQ2FydMOjbyBkZSBkw6liaXRvIiwi
+        bmFtZSI6ImRlYml0X2NhcmQiLCJjb2RlIjoiZGViaXRfY2FyZCIsInR5cGUi
+        OiJQYXltZW50TWV0aG9kOjpEZWJpdENhcmQifSwiYmlsbCI6eyJpZCI6NDQ4
+        LCJjb2RlIjpudWxsfSwiY3VzdG9tZXIiOnsiaWQiOjIsIm5hbWUiOiJKb2hh
+        bmEgRG9lIiwiZW1haWwiOiJlbWFpbEBlbWFpbC5jb20iLCJjb2RlIjoib29v
+        b29vbyJ9fX0=
+    http_version: 
+  recorded_at: Wed, 06 Sep 2017 14:17:18 GMT
+recorded_with: VCR 3.0.3
