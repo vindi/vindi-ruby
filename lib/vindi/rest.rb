@@ -12,6 +12,7 @@ require 'vindi/rest/charge'
 require 'vindi/rest/transaction'
 require 'vindi/rest/payment_profile'
 require 'vindi/rest/usage'
+require 'vindi/rest/movement'
 
 module Vindi
   module Rest
@@ -29,5 +30,6 @@ module Vindi
     include Vindi::Rest::Transaction
     include Vindi::Rest::PaymentProfile
     include Vindi::Rest::Usage
+    include Vindi::Rest::Movement
   end
 end
