@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://staging-app.vindi.com.br/api/v1/invoices/108
+    body:
+      encoding: UTF-8
+      string: amount=2
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 08 Sep 2017 16:11:00 GMT
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '116'
+      Rate-Limit-Reset:
+      - '1504887118'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=bdc4b7da0cb7dd0254ec2aae989690c6--422; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - a5f1819a-effc-425c-8d85-345dd6ce5e7c
+      X-Runtime:
+      - '0.032218'
+      Content-Length:
+      - '97'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOlt7ImlkIjoiaW52YWxpZF9wYXJhbWV0ZXIiLCJwYXJhbWV0
+        ZXIiOiJiYXNlIiwibWVzc2FnZSI6Im7Do28gc3Vwb3J0YSBhdHVhbGl6YcOn
+        w6NvIn1dfQ==
+    http_version: 
+  recorded_at: Fri, 08 Sep 2017 16:11:00 GMT
+recorded_with: VCR 3.0.3
