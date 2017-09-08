@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://staging-app.vindi.com.br/api/v1/transactions
+    body:
+      encoding: UTF-8
+      string: amount=100&charge_id=457&paid_at=2017-09-08&payment_method_code=cash
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 08 Sep 2017 12:48:56 GMT
+      Etag:
+      - W/"e45708056141d44f7e3b1dfb9f2d76f0"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '117'
+      Rate-Limit-Reset:
+      - '1504874995'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=3fdd149f65b4169b15b2f379c6c4448a--201; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 4f6fcf5d-1383-4aea-82bb-a2967cb97f19
+      X-Runtime:
+      - '0.180524'
+      Content-Length:
+      - '676'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"transaction":{"id":499,"transaction_type":"charge","status":"success","amount":"100.0","installments":null,"gateway_message":null,"gateway_response_code":null,"gateway_authorization":"","gateway_transaction_id":null,"gateway_response_fields":null,"fraud_detector_score":null,"fraud_detector_status":null,"fraud_detector_id":null,"created_at":"2017-09-08T09:48:56.189-03:00","updated_at":"2017-09-08T09:48:56.228-03:00","gateway":null,"payment_profile":null,"charge":{"id":457},"customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"payment_method":{"id":14,"public_name":"Dinheiro","name":"Dinheiro","code":"cash","type":"PaymentMethod::Cash"}}}'
+    http_version: 
+  recorded_at: Fri, 08 Sep 2017 12:48:56 GMT
+recorded_with: VCR 3.0.3

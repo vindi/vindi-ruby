@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/transactions/498
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 08 Sep 2017 12:48:55 GMT
+      Etag:
+      - W/"a1816e6fb6c0b20ca1720a88eda221e8"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '118'
+      Rate-Limit-Reset:
+      - '1504874994'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=01dbc4694652ed52fe80cc47fe3bede6--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 835b62a7-704b-4ce4-b5b8-c1f6b9a53dbd
+      X-Runtime:
+      - '0.020940'
+      Content-Length:
+      - '675'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"transaction":{"id":498,"transaction_type":"charge","status":"success","amount":"99.0","installments":null,"gateway_message":null,"gateway_response_code":null,"gateway_authorization":"","gateway_transaction_id":null,"gateway_response_fields":null,"fraud_detector_score":null,"fraud_detector_status":null,"fraud_detector_id":null,"created_at":"2017-09-08T09:42:54.000-03:00","updated_at":"2017-09-08T09:42:54.000-03:00","gateway":null,"payment_profile":null,"charge":{"id":458},"customer":{"id":2,"name":"Johana
+        Doe","email":"email@email.com","code":"ooooooo"},"payment_method":{"id":14,"public_name":"Dinheiro","name":"Dinheiro","code":"cash","type":"PaymentMethod::Cash"}}}'
+    http_version: 
+  recorded_at: Fri, 08 Sep 2017 12:48:55 GMT
+recorded_with: VCR 3.0.3

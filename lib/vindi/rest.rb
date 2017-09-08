@@ -9,6 +9,7 @@ require 'vindi/rest/period'
 require 'vindi/rest/bill'
 require 'vindi/rest/bill_item'
 require 'vindi/rest/charge'
+require 'vindi/rest/transaction'
 
 module Vindi
   module Rest
@@ -23,5 +24,6 @@ module Vindi
     include Vindi::Rest::Bill
     include Vindi::Rest::BillItem
     include Vindi::Rest::Charge
+    include Vindi::Rest::Transaction
   end
 end
