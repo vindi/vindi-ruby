@@ -1,21 +1,19 @@
 require 'spec_helper'
 
 RSpec.describe Vindi::Client do
-  let(:options) { { key: 'xDw3elPwddlzqgFzJqZXkiy-jZlzVvY7L1aVdcDbMHg', 
+  let(:options) { { key: 'xDw3elPwddlzqgFzJqZXkiy-jZlzVvY7L1aVdcDbMHg',
                     default_media_type: 'application/vnd.api+json' } }
+
+  let(:client) { basic_auth_client }
 
   context 'initialization' do
     describe 'when initialize a new client' do
       it 'overrides default settings' do
-        client = Vindi::Client.new(options)
-
         expect(client.key).to eq(options[:key])
         expect(client.default_media_type).to eq(options[:default_media_type])
       end
 
       it 'sets configuration after initialization' do
-        client = Vindi::Client.new
-
         options.each do |key, value|
           client.instance_variable_set("@#{key}", value)
         end
@@ -27,8 +25,6 @@ RSpec.describe Vindi::Client do
   end
 
   context 'requests' do
-    let(:client) { Vindi::Client.new(options) }
-    
     describe 'content type' do
       it 'sets a default Content-Type header' do
 
@@ -38,7 +34,7 @@ RSpec.describe Vindi::Client do
         assert_requested plan_request
       end
     end
-    
+
     describe 'authorization' do
       it 'makes a authenticated request' do
         token = 'eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo='

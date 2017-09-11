@@ -6,7 +6,7 @@ module Vindi
   module Configuration
     attr_reader :user_agent, :middleware, :connection_options
     attr_accessor :key, :default_media_type, :api_endpoint
-    
+
     class << self
       def keys
         @keys ||= [:key, :default_media_type, :api_endpoint, :user_agent,

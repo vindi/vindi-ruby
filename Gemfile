@@ -4,6 +4,8 @@ group :development do
   gem 'awesome_print', require: 'ap'
   gem 'byebug'
   gem 'yard'
+  gem 'pry'
+  gem 'pry-nav'
 end
 
 group :test do

@@ -1,7 +1,9 @@
 require 'simplecov'
 SimpleCov.start
 
-require 'vindi'  
+VINDI_STAGING_ENDPOINT = "https://staging-app.vindi.com.br/api/v1/".freeze
+
+require 'vindi'
 require 'rspec'
 require 'webmock/rspec'
 require 'vcr'
@@ -24,7 +26,7 @@ end
 
 def vindi_url(url)
   return url if url =~ /^https/
-  url.prepend(Vindi::Default.api_endpoint)
+  url.prepend(VINDI_STAGING_ENDPOINT)
 end
 
 def test_key
@@ -32,5 +34,5 @@ def test_key
 end
 
 def basic_auth_client(key = test_key)
-  Vindi::Client.new(key: key)
+  Vindi::Client.new(key: key, api_endpoint: VINDI_STAGING_ENDPOINT)
 end
