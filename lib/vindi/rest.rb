@@ -16,6 +16,7 @@ require 'vindi/rest/movement'
 require 'vindi/rest/invoice'
 require 'vindi/rest/message'
 require 'vindi/rest/import_batch'
+require 'vindi/rest/issue'
 
 module Vindi
   module Rest
@@ -37,5 +38,6 @@ module Vindi
     include Vindi::Rest::Invoice
     include Vindi::Rest::Message
     include Vindi::Rest::ImportBatch
+    include Vindi::Rest::Issue
   end
 end
