@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/notifications/41
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 11 Sep 2017 18:31:37 GMT
+      Etag:
+      - W/"ff34f5cc8243d4e3438a39dcd9c69f83"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '118'
+      Rate-Limit-Reset:
+      - '1505154756'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=142aeff0bfc8844d60e86c0f41a9b24c--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 36ead614-d08a-4c1e-a0c8-3256818acb0c
+      X-Runtime:
+      - '0.015826'
+      Content-Length:
+      - '281'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"notification":{"id":41,"status":"active","notification_type":"email","name":"Hoops","subject":"Hoops","content":"Hey,
+        Hoops!","trigger_type":"charge_created_at","trigger_day":3,"bcc":null,"created_at":"2017-09-11T14:00:34.000-03:00","updated_at":"2017-09-11T15:29:00.000-03:00"}}'
+    http_version: 
+  recorded_at: Mon, 11 Sep 2017 18:31:37 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/notifications/48/notification_items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 11 Sep 2017 19:04:42 GMT
+      Etag:
+      - W/"c51d7b60024208f40f3e600265696326"
+      Per-Page:
+      - '25'
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1505156742'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=613cedde2a80a2213f0188b4b898e852--200; path=/; max-age=5; HttpOnly
+      Total:
+      - '0'
+      X-Request-Id:
+      - 058d3928-74b9-40c1-a4b5-baa9610c1188
+      X-Runtime:
+      - '0.017561'
+      Content-Length:
+      - '25'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"notification_items":[]}'
+    http_version: 
+  recorded_at: Mon, 11 Sep 2017 19:04:43 GMT
+recorded_with: VCR 3.0.3
