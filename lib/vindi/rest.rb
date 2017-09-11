@@ -23,5 +23,6 @@ module Vindi
     include Vindi::Rest::Message
     include Vindi::Rest::ImportBatch
     include Vindi::Rest::Issue
+    include Vindi::Rest::Merchant
   end
 end
