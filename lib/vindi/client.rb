@@ -9,7 +9,7 @@ module Vindi
     include Vindi::Rest
 
     def initialize(options = {}, &block)
-      setup && configure(options, &block) 
+      setup && configure(options, &block)
     end
   end
 end

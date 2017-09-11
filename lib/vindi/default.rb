@@ -3,9 +3,9 @@ require 'vindi/version'
 
 module Vindi
   module Default
-    # Default API endpoint 
-    API_ENDPOINT = 'https://staging-app.vindi.com.br/api/v1/'.freeze
-    
+    # Default API endpoint
+    API_ENDPOINT = 'https://app.vindi.com.br/api/v1/'.freeze
+
     # Default media type
     MEDIA_TYPE   = 'application/vnd.api+json'.freeze
 
@@ -15,7 +15,7 @@ module Vindi
     MIDDLEWARE   = Vindi::Response::RaiseError
 
     class << self
-    
+
       # Default api endpoint string from ENV or API_ENDPOINT
       # @return [String]
       def api_endpoint
