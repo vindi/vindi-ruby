@@ -1,22 +1,6 @@
-require 'vindi/rest/plan'
-require 'vindi/rest/product'
-require 'vindi/rest/customer'
-require 'vindi/rest/payment_method'
-require 'vindi/rest/discount'
-require 'vindi/rest/subscription'
-require 'vindi/rest/product_item'
-require 'vindi/rest/period'
-require 'vindi/rest/bill'
-require 'vindi/rest/bill_item'
-require 'vindi/rest/charge'
-require 'vindi/rest/transaction'
-require 'vindi/rest/payment_profile'
-require 'vindi/rest/usage'
-require 'vindi/rest/movement'
-require 'vindi/rest/invoice'
-require 'vindi/rest/message'
-require 'vindi/rest/import_batch'
-require 'vindi/rest/issue'
+Dir[File.expand_path("../rest/**/*.rb", __FILE__)].each do |file|
+  require file
+end
 
 module Vindi
   module Rest
