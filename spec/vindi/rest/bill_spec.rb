@@ -18,7 +18,7 @@ RSpec.describe Vindi::Client::Bill do
       VCR.use_cassette("rest/bills/bill") do
         bill_response = client.bill(468)
         assert_requested :get, vindi_url("bills/468")
-        expect(bill_response).to be_kind_of(Hash)
+        expect(bill_response).to include(:bill_items)
       end
     end
   end
