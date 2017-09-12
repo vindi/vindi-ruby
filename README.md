@@ -7,7 +7,7 @@ Ruby toolkit para a [API de Recorrência][link-introducao-api] da [Vindi][link-v
 ## Instalação
 
 ```ruby
-gem 'vindi-ruby'
+gem 'vindi'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install vindi-ruby
+    $ gem install vindi
 
 ## Uso
 Os métodos da API estão disponíveis atraves dos métodos da instancia de um cliente
