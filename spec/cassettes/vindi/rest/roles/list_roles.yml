@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/roles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 12 Sep 2017 12:54:15 GMT
+      Etag:
+      - W/"78d0118f14150d1ead814339bf7a2df5"
+      Per-Page:
+      - '25'
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1505220915'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=1151ef540fb0d62e4eccd705068a4d3a--200; path=/; max-age=5; HttpOnly
+      Total:
+      - '5'
+      X-Request-Id:
+      - 67261d50-35b7-4586-b46e-565cf6b4a4a9
+      X-Runtime:
+      - '0.033405'
+      Content-Length:
+      - '287'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"roles":[{"id":7,"name":"Administrador","base_role":"Administrator"},{"id":8,"name":"Gestor","base_role":"Manager"},{"id":9,"name":"Atendimento","base_role":"CustomerService"},{"id":10,"name":"Observador","base_role":"ReadOnly"},{"id":11,"name":"Perfil
+        em branco","base_role":"Blank"}]}'
+    http_version: 
+  recorded_at: Tue, 12 Sep 2017 12:54:15 GMT
+recorded_with: VCR 3.0.3

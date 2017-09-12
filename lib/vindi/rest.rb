@@ -25,5 +25,6 @@ module Vindi
     include Vindi::Rest::Notification
     include Vindi::Rest::Issue
     include Vindi::Rest::Merchant
+    include Vindi::Rest::Role
   end
 end
