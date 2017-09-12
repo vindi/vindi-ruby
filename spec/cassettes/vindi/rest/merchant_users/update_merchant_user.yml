@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://staging-app.vindi.com.br/api/v1/merchant_users/39
+    body:
+      encoding: UTF-8
+      string: role_id=7
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 12 Sep 2017 14:24:35 GMT
+      Etag:
+      - W/"0483242daec7a2c2c09cf62f58bff31e"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '117'
+      Rate-Limit-Reset:
+      - '1505226292'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=e248f8c0a9f5c380c73fcbfffb732879--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - 3c57d7a4-09a3-402e-b640-7a4547e98a64
+      X-Runtime:
+      - '0.025284'
+      Content-Length:
+      - '275'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"merchant_user":{"id":39,"status":"active","last_sign_in_at":null,"user":{"id":28,"name":"Joana
+        Doe","email":"joanadoe@teste.com.br","status":"invitation_sent","created_at":"2017-09-12T11:17:16.000-03:00"},"role":{"id":7,"name":"Administrador","base_role":"Administrator"}}}'
+    http_version: 
+  recorded_at: Tue, 12 Sep 2017 14:24:35 GMT
+recorded_with: VCR 3.0.3

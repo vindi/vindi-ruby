@@ -27,5 +27,6 @@ module Vindi
     include Vindi::Rest::Merchant
     include Vindi::Rest::Role
     include Vindi::Rest::User
+    include Vindi::Rest::MerchantUser
   end
 end
