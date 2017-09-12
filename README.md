@@ -2,6 +2,8 @@
 
 Ruby toolkit para a [API de Recorrência][link-introducao-api] da [Vindi][link-vindi].
 
+[![Build Status](https://semaphoreci.com/api/v1/projects/48986e75-f1a3-4ca3-ae41-2d6cf64ac507/1512354/badge.svg)](https://semaphoreci.com/vindi/vindi-ruby)
+
 ## Instalação
 
 ```ruby
@@ -29,15 +31,15 @@ Os recursos são fornecidos através do objeto de retono e os campos retornados 
 ```ruby
   # Listando planos de um lojista
   client.list_plans
-  # => {:plans=>[{:id=>15, :name=>"My awesome plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
+  # => [{:id=>15, :name=>"My awesome plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
 
   # Consultando um plano
   client.plan(15)
-  # => {:plans=>[{:id=>15, :name=>"My awesome plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
+  # => {:id=>15, :name=>"My awesome plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
 
   # Atualizando um plano
   client.update_plan(15, {name: 'My plan'})
-  # => {:plans=>[{:id=>15, :name=>"My plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
+  # => {:id=>15, :name=>"My plan", :interval=>"months", :interval_count=>1, :billing_trigger_type=>"beginning_of_period" ...
 
   # Criando um plano
   client.create_plan({name: 'My new plan', interval: 'months', interval_count: 1,  billing_trigger_type: 'beginning_of_period'})
