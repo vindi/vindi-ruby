@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://staging-app.vindi.com.br/api/v1/users/current
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.1
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 12 Sep 2017 13:06:25 GMT
+      Etag:
+      - W/"6d3600a46bb738376a1514eae93988bf"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '118'
+      Rate-Limit-Reset:
+      - '1505221618'
+      Server:
+      - nginx
+      Set-Cookie:
+      - _mkra_ctxt=18ed687441b6f7f094a229733295a52e--200; path=/; max-age=5; HttpOnly
+      X-Request-Id:
+      - f70fcc0c-3415-4862-b6ba-da26ccb1a5e1
+      X-Runtime:
+      - '0.013321'
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"user":null}'
+    http_version: 
+  recorded_at: Tue, 12 Sep 2017 13:06:25 GMT
+recorded_with: VCR 3.0.3
