@@ -1,8 +1,16 @@
 # Vindi Ruby
 
+[![Build Status](https://semaphoreci.com/api/v1/projects/48986e75-f1a3-4ca3-ae41-2d6cf64ac507/1512354/badge.svg)](https://semaphoreci.com/vindi/vindi-ruby)
+
+## Descrição
+
 Ruby toolkit para a [API de Recorrência][link-introducao-api] da [Vindi][link-vindi].
 
-[![Build Status](https://semaphoreci.com/api/v1/projects/48986e75-f1a3-4ca3-ae41-2d6cf64ac507/1512354/badge.svg)](https://semaphoreci.com/vindi/vindi-ruby)
+## Requisitos
+
+* Ruby >=2.3;
+* Certificado digital HTTPS assinado por uma entidade certificadora;
+* Conta ativa na [Vindi](https://www.vindi.com.br).
 
 ## Instalação
 
@@ -10,11 +18,11 @@ Ruby toolkit para a [API de Recorrência][link-introducao-api] da [Vindi][link-v
 gem 'vindi'
 ```
 
-And then execute:
+Então execute:
 
     $ bundle
 
-Or install it yourself as:
+Ou instale você mesmo:
 
     $ gem install vindi
 
@@ -23,10 +31,10 @@ Os métodos da API estão disponíveis atraves dos métodos da instancia de um c
 
 ```ruby
   client = Vindi::Client.new(key: 'VINDI_KEY')
-``` 
+```
 
 ### Consumindo recursos
-Os recursos são fornecidos através do objeto de retono e os campos retornados podem ser acessados pela notação de attributos de um Hash 
+Os recursos são fornecidos através do objeto de retorno e os campos retornados podem ser acessados pela notação de attributos de um Hash
 
 ```ruby
   # Listando planos de um lojista
@@ -43,7 +51,7 @@ Os recursos são fornecidos através do objeto de retono e os campos retornados 
 
   # Criando um plano
   client.create_plan({name: 'My new plan', interval: 'months', interval_count: 1,  billing_trigger_type: 'beginning_of_period'})
-``` 
+```
 
 ### Acessando respostas HTTP
 
@@ -51,7 +59,7 @@ Os recursos são fornecidos através do objeto de retono e os campos retornados 
   client.list_plans
   response  = client.last_response
   status = response.status
-``` 
+```
 
 ## Dúvidas
 Caso necessite de informações sobre a plataforma ou API, por favor acesse o [Atendimento Vindi](http://atendimento.vindi.com.br/hc/pt-br).

@@ -69,12 +69,11 @@ module Vindi
     end
 
     def build_error_message(response)
-      return if response.nil? or response.body.nil?
+      return unless response&.body
 
       self.status_code = response.status
 
-      message = response.body
-      message
+      response.body
     end
   end
 end
