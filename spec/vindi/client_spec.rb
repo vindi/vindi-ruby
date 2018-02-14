@@ -62,8 +62,11 @@ RSpec.describe Vindi::Client do
     describe 'errors' do
       it 'retuns not found error' do
         VCR.use_cassette("raise_404_error") do
-          expect{ client.get 'hello' }
-            .to raise_error Vindi::Error::NotFound
+          begin
+            client.get 'hello'
+          rescue Vindi::Error::NotFound => error
+            expect(error.status_code).to eq 404
+          end
         end
       end
     end
