@@ -33,6 +33,19 @@ Os métodos da API estão disponíveis atraves dos métodos da instancia de um c
   client = Vindi::Client.new(key: 'VINDI_KEY')
 ```
 
+Para testar no ambiente Sandbox, use o endpoint da API [https://sandbox-app.vindi.com.br/api/v1] para efetuar requisições:
+
+```ruby
+  client = Vindi::Client.new(key: 'VINDI_KEY', api_endpoint: 'VINDI_API_ENDPOINT')
+```
+
+Caso prefira utilizar variáveis de ambiente para prover credenciais de acesso:
+
+```
+  VINDI_KEY="vindi_key"
+  VINDI_API_ENDPOINT="https://sandbox-app.vindi.com.br/api/v1"
+```
+
 ### Consumindo recursos
 Os recursos são fornecidos através do objeto de retorno e os campos retornados podem ser acessados pela notação de attributos de um Hash
 
