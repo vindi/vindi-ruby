@@ -1,6 +1,7 @@
 module Vindi
   # Custom error class for rescuing from all Vindi errors
   class Error < StandardError
+    attr_accessor :status_code
 
     # Raised when Vindi returns a 4xx HTTP status code
     ClientError = Class.new(self)
@@ -68,10 +69,11 @@ module Vindi
     end
 
     def build_error_message(response)
-      return if response.nil?
+      return unless response&.body
 
-      message  = "#{response[:method].to_s.upcase} "
-      message
+      self.status_code = response.status
+
+      response.body
     end
   end
 end
