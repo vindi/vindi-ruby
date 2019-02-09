@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.files        +=  Dir.glob("lib/**/*.rb")
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'faraday', '~> 0.13.1'
+  spec.add_dependency 'faraday', '~> 0.13'
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
 end
