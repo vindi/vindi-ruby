@@ -9,4 +9,4 @@
 /tmp/
 .byebug_history
 *.gem
-.gitignore
+.ruby-version
