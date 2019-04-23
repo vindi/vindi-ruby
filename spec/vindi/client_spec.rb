@@ -1,13 +1,14 @@
 require 'spec_helper'
 
 RSpec.describe Vindi::Client do
-  let(:options) { { key: 'xDw3elPwddlzqgFzJqZXkiy-jZlzVvY7L1aVdcDbMHg',
-                    default_media_type: 'application/vnd.api+json' } }
-
+  let(:options) do
+    { key: key, default_media_type: 'application/vnd.api+json' }
+  end
+  let(:key) { 'xDw3elPwddlzqgFzJqZXkiy-jZlzVvY7L1aVdcDbMHg' }
   let(:client) { basic_auth_client }
 
   context 'initialization' do
-    describe 'when initialize a new client' do
+    describe 'when initialize a new client with default settings' do
       it 'overrides default settings' do
         expect(client.key).to eq(options[:key])
         expect(client.default_media_type).to eq(options[:default_media_type])
@@ -20,6 +21,25 @@ RSpec.describe Vindi::Client do
 
         expect(client.key).to eq(options[:key])
         expect(client.default_media_type).to eq(options[:default_media_type])
+      end
+    end
+
+    describe 'when initializing a client with custom settings' do
+      it 'use sandbox endpoint via class parameters' do
+        api_endpoint = VINDI_SANDBOX_ENDPOINT
+        sandbox_client = Vindi::Client.new(key: key, api_endpoint: api_endpoint)
+
+        expect(sandbox_client.api_endpoint).to eq(api_endpoint)
+      end
+
+      it 'use sandbox endpoint via system variables' do
+        api_endpoint = VINDI_SANDBOX_ENDPOINT
+        ENV['VINDI_API_ENDPOINT'] = api_endpoint
+        ENV['VINDI_KEY'] = key
+        sandbox_client = Vindi::Client.new
+
+        expect(sandbox_client.api_endpoint).to eq(api_endpoint)
+        expect(sandbox_client.key).to eq(key)
       end
     end
   end
