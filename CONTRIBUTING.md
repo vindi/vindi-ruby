@@ -6,7 +6,7 @@ Este projeto e todos os participantes estão sob o regimento do [**Código de Co
 
 **Contribuições** são **muito bem vindas** e serão totalmente [**creditadas**](https://github.com/vindi/vindi-ruby/graphs/contributors).
 
-Nós valorizamos muito as [**contribuições por Pull Requests (PR)**](https://github.com/vindi/vindi-ruby/pulls) no [GitHub](https://github.com/vindi/vindi-ruby), mas também adoramos [**sugestões de novas features**](https://github.com/vindi/vindi-ruby/issues/new). Por isso, fique à vontade para **reportar um bug :rotating_light:** e também para **parabenizar :tada: o projeto vindi-php!**
+Nós valorizamos muito as [**contribuições por Pull Requests (PR)**](https://github.com/vindi/vindi-ruby/pulls) no [GitHub](https://github.com/vindi/vindi-ruby), mas também adoramos [**sugestões de novas features**](https://github.com/vindi/vindi-ruby/issues/new). Por isso, fique à vontade para **reportar um bug :rotating_light:** e também para **parabenizar :tada: o projeto vindi-ruby!**
 
 
 ## Requisitos de um bom Pull Request (PR)
