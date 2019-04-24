@@ -30,6 +30,9 @@ module Vindi
     # Raised when Vindi returns a 5xx HTTP status code
     ServerError = Class.new(self)
 
+    # Raised when Vindi returns the HTTP status code 500
+    InternalServerError = Class.new(ServerError)
+
     # Raised when Vindi returns the HTTP status code 502
     BadGateway = Class.new(ServerError)
 
