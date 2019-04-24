@@ -30,7 +30,20 @@ Ou instale você mesmo:
 Os métodos da API estão disponíveis atraves dos métodos da instancia de um cliente
 
 ```ruby
-  client = Vindi::Client.new(key: 'VINDI_KEY')
+  client = Vindi::Client.new(key: '<sua_vindi_api_key>')
+```
+
+Para testar no ambiente Sandbox, use o endpoint da API para efetuar requisições:
+
+```ruby
+  client = Vindi::Client.new(key: '<sua_vindi_api_key>', api_endpoint: 'https://sandbox-app.vindi.com.br/api/v1')
+```
+
+Caso prefira utilizar variáveis de ambiente para prover credenciais de acesso:
+
+```
+export VINDI_KEY="<sua_vindi_api_key>"
+export VINDI_API_ENDPOINT="https://sandbox-app.vindi.com.br/api/v1"
 ```
 
 ### Consumindo recursos

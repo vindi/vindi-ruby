@@ -2,6 +2,7 @@ require 'simplecov'
 SimpleCov.start
 
 VINDI_STAGING_ENDPOINT = "https://staging-app.vindi.com.br/api/v1/".freeze
+VINDI_SANDBOX_ENDPOINT = "https://sandbox-app.vindi.com.br/api/v1/".freeze
 
 require 'vindi'
 require 'rspec'
