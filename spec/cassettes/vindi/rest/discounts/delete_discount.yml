@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: delete
-    uri: https://staging-app.vindi.com.br/api/v1/discounts/14
+    uri: https://sandbox-app.vindi.com.br/api/v1/discounts/13318
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.1
+      - Vindi-Ruby/0.0.4
       Authorization:
-      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,30 +25,37 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 04 Sep 2017 19:01:42 GMT
+      - Thu, 25 Apr 2019 21:30:47 GMT
       Etag:
-      - W/"231f6563a06ab98e5c468e200f516b11"
+      - W/"13945dfaeafc627eef11aa166701b2b2"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
       - '117'
       Rate-Limit-Reset:
-      - '1504551761'
+      - '1556227857'
       Server:
       - nginx
-      Set-Cookie:
-      - _mkra_ctxt=d67a52b77163650dc8cbf46ea8f85b3b--200; path=/; max-age=5; HttpOnly
+      Vary:
+      - Origin
       X-Request-Id:
-      - 1c86cbf0-5001-423c-b567-c7efe7c8ff3e
+      - e00efd0c-7eb9-4d36-bc16-465aca643b1d
       X-Runtime:
-      - '0.039143'
+      - '0.050144'
       Content-Length:
-      - '295'
+      - '307'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: '{"discount":{"id":14,"discount_type":"percentage","percentage":"10.0","amount":"1.0","quantity":1,"cycles":1,"status":"inactive","created_at":"2017-09-04T15:56:09.000-03:00","updated_at":"2017-09-04T16:01:42.581-03:00","product_item":{"id":118,"product":{"id":26,"name":"t-shirt","code":null}}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkaXNjb3VudCI6eyJpZCI6MTMzMTgsImRpc2NvdW50X3R5cGUiOiJwZXJj
+        ZW50YWdlIiwicGVyY2VudGFnZSI6IjEwLjAiLCJhbW91bnQiOiIxLjAiLCJx
+        dWFudGl0eSI6MSwiY3ljbGVzIjoxLCJzdGF0dXMiOiJpbmFjdGl2ZSIsImNy
+        ZWF0ZWRfYXQiOiIyMDE5LTA0LTI1VDE4OjI4OjIxLjAwMC0wMzowMCIsInVw
+        ZGF0ZWRfYXQiOiIyMDE5LTA0LTI1VDE4OjMwOjQ3LjE1OC0wMzowMCIsInBy
+        b2R1Y3RfaXRlbSI6eyJpZCI6MTA0OTc3LCJwcm9kdWN0Ijp7ImlkIjoxODM0
+        LCJuYW1lIjoiMiBVc3XDoXJpb3MiLCJjb2RlIjpudWxsfX19fQ==
     http_version: 
-  recorded_at: Mon, 04 Sep 2017 19:01:42 GMT
+  recorded_at: Thu, 25 Apr 2019 21:30:47 GMT
 recorded_with: VCR 3.0.3

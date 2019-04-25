@@ -16,8 +16,8 @@ RSpec.describe Vindi::Client::Customer do
   describe 'customer' do
     it 'returns a customer from vindi' do
       VCR.use_cassette("rest/customers/customer") do
-        customer_response = client.customer(15)
-        assert_requested :get, vindi_url("customers/15")
+        customer_response = client.customer(117101)
+        assert_requested :get, vindi_url("customers/117101")
         expect(customer_response).to be_kind_of(Hash)
       end
     end
@@ -39,8 +39,8 @@ RSpec.describe Vindi::Client::Customer do
     it 'returns the updated customer' do
       VCR.use_cassette("rest/customers/update_customer") do
         customer_attributes = { name: 'Johana Doe' }
-        customer_response = client.update_customer(15, customer_attributes)
-        assert_requested :put, vindi_url("customers/15")
+        customer_response = client.update_customer(152374, customer_attributes)
+        assert_requested :put, vindi_url("customers/152374")
         expect(customer_response[:name]).to eq('Johana Doe')
       end
     end
@@ -49,8 +49,8 @@ RSpec.describe Vindi::Client::Customer do
   describe 'delete_customer' do
     it 'returns the deleted customer' do
       VCR.use_cassette("rest/customers/delete_customer") do
-        customer_response = client.delete_customer(15)
-        assert_requested :delete, vindi_url("customers/15")
+        customer_response = client.delete_customer(152374)
+        assert_requested :delete, vindi_url("customers/152374")
         expect(customer_response[:name]).to eq('Johana Doe')
       end
     end

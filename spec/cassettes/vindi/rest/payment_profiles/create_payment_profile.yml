@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/payment_profiles
+    uri: https://sandbox-app.vindi.com.br/api/v1/payment_profiles
     body:
       encoding: UTF-8
       string: card_cvv=123&card_expiration=12%2F2018&card_number=5167454851671773&customer_id=382&holder_name=John+Doe&payment_company_code=mastercard&payment_method_code=credit_card

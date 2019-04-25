@@ -16,8 +16,8 @@ RSpec.describe Vindi::Client::Bill do
   describe 'bill' do
     it 'returns a bill from vindi' do
       VCR.use_cassette("rest/bills/bill") do
-        bill_response = client.bill(468)
-        assert_requested :get, vindi_url("bills/468")
+        bill_response = client.bill(664682)
+        assert_requested :get, vindi_url("bills/664682")
         expect(bill_response).to include(:bill_items)
       end
     end
@@ -26,8 +26,8 @@ RSpec.describe Vindi::Client::Bill do
   describe 'create_bill' do
     it 'returns the newly created bill' do
       VCR.use_cassette("rest/bills/create_bill") do
-        bill_attributes = { customer_id: 2, payment_method_code: "credit_card",
-                            bill_items: [{ product_id: 26, amount: 1 }] }
+        bill_attributes = { customer_id: 117101, payment_method_code: "credit_card",
+                            bill_items: [{ product_id: 8324, amount: 1 }] }
 
         bill_response = client.create_bill(bill_attributes)
         assert_requested :post, vindi_url("bills")
@@ -40,8 +40,8 @@ RSpec.describe Vindi::Client::Bill do
     it 'returns the updated bill' do
       VCR.use_cassette("rest/bills/update_bill") do
         bill_attributes = { installments: 2 }
-        bill_response = client.update_bill(468, bill_attributes)
-        assert_requested :put, vindi_url("bills/468")
+        bill_response = client.update_bill(664682, bill_attributes)
+        assert_requested :put, vindi_url("bills/664682")
         expect(bill_response[:installments]).to eq(2)
       end
     end
@@ -50,8 +50,8 @@ RSpec.describe Vindi::Client::Bill do
   describe 'approve_bill' do
     it 'returns the approved bill' do
       VCR.use_cassette("rest/bills/approve_bill") do
-        bill_response = client.approve_bill(476)
-        assert_requested :post, vindi_url("bills/476/approve")
+        bill_response = client.approve_bill(664689)
+        assert_requested :post, vindi_url("bills/664689/approve")
         expect(bill_response[:status]).to eq('pending')
       end
     end
@@ -60,8 +60,8 @@ RSpec.describe Vindi::Client::Bill do
   describe 'charge_bill' do
     it 'returns the charged bill' do
       VCR.use_cassette("rest/bills/charge_bill") do
-        bill_response = client.charge_bill(479)
-        assert_requested :post, vindi_url("bills/479/charge")
+        bill_response = client.charge_bill(664689)
+        assert_requested :post, vindi_url("bills/664689/charge")
         expect(bill_response[:status]).to eq('pending')
       end
     end
@@ -70,8 +70,8 @@ RSpec.describe Vindi::Client::Bill do
   describe 'create_invoice' do
     it 'returns the invoice generated from bill' do
       VCR.use_cassette("rest/bills/create_invoice") do
-        bill_response = client.create_invoice_from_bill(481)
-        assert_requested :post, vindi_url("bills/481/invoice")
+        bill_response = client.create_invoice_from_bill(664689)
+        assert_requested :post, vindi_url("bills/664689/invoice")
         expect(bill_response[0][:status]).to eq('processing')
       end
     end
@@ -80,8 +80,8 @@ RSpec.describe Vindi::Client::Bill do
   describe 'delete_bill' do
     it 'returns the deleted bill' do
       VCR.use_cassette("rest/bills/delete_bill") do
-        bill_response = client.delete_bill(475)
-        assert_requested :delete, vindi_url("bills/475")
+        bill_response = client.delete_bill(664682)
+        assert_requested :delete, vindi_url("bills/664682")
         expect(bill_response[:status]).to eq('canceled')
       end
     end

@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/merchant_users/38
+    uri: https://sandbox-app.vindi.com.br/api/v1/merchant_users/17
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.1
+      - Vindi-Ruby/0.0.4
       Authorization:
-      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,31 +25,30 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 12 Sep 2017 14:15:03 GMT
+      - Thu, 25 Apr 2019 21:59:25 GMT
       Etag:
-      - W/"748120185127f2efd2d79b0302dceec9"
+      - W/"7b2cf3ea59514b0e2b55a85b8e1f5caf"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '117'
+      - '119'
       Rate-Limit-Reset:
-      - '1505225730'
+      - '1556229625'
       Server:
       - nginx
-      Set-Cookie:
-      - _mkra_ctxt=366e5066bce014f8f7f5a489d690b756--200; path=/; max-age=5; HttpOnly
+      Vary:
+      - Origin
       X-Request-Id:
-      - 6f0d451e-2046-4ca5-9d50-b99c5686bdfe
+      - 58e05630-9136-4000-8be3-3274ef91987c
       X-Runtime:
-      - '0.034530'
+      - '0.022618'
       Content-Length:
-      - '265'
+      - '290'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"merchant_user":{"id":38,"status":"active","last_sign_in_at":null,"user":{"id":27,"name":"Jane
-        Doe","email":"testejane@teste.com","status":"invitation_sent","created_at":"2017-09-11T17:23:55.000-03:00"},"role":{"id":10,"name":"Observador","base_role":"ReadOnly"}}}'
+      string: '{"merchant_user":{"id":17,"status":"active","last_sign_in_at":"2018-01-24T12:19:37.000-02:00","user":{"id":11,"name":"Tester","email":"juninholtl@gmail.com","status":"active","created_at":"2017-09-05T15:51:43.000-03:00"},"role":{"id":62,"name":"Administrador","base_role":"Administrator"}}}'
     http_version: 
-  recorded_at: Tue, 12 Sep 2017 14:15:04 GMT
+  recorded_at: Thu, 25 Apr 2019 21:59:25 GMT
 recorded_with: VCR 3.0.3

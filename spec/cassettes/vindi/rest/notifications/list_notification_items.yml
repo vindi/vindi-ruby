@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/notifications/48/notification_items
+    uri: https://sandbox-app.vindi.com.br/api/v1/notifications/48/notification_items
     body:
       encoding: US-ASCII
       string: ''

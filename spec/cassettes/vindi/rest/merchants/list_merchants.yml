@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/merchants
+    uri: https://sandbox-app.vindi.com.br/api/v1/merchants
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.1
+      - Vindi-Ruby/0.0.4
       Authorization:
-      - Basic WklFYW54d0RaV0FJaXZxS2U3eUR1cU1pS2l0clVQenZORXVpVllmQktOUTo=
+      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,50 +21,32 @@ http_interactions:
       message: OK
     headers:
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 11 Sep 2017 17:51:51 GMT
-      Etag:
-      - W/"ddd72976f4f8dbe610d25fc47a471dac"
-      Per-Page:
-      - '25'
+      - Thu, 25 Apr 2019 21:54:29 GMT
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '118'
+      - '119'
       Rate-Limit-Reset:
-      - '1505152370'
+      - '1556229329'
       Server:
       - nginx
-      Set-Cookie:
-      - _mkra_ctxt=d9c18ce64d70130570b3c2d71a800bbf--200; path=/; max-age=5; HttpOnly
-      Total:
-      - '11'
+      Vary:
+      - Origin
       X-Request-Id:
-      - 73c62e10-4a7d-463d-b6ab-9fb137641bfc
+      - dbb6793a-2465-464d-95b1-9ad86d2b8c93
       X-Runtime:
-      - '0.032952'
+      - '0.028009'
       Content-Length:
-      - '1673'
+      - '85'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"merchants":[{"id":1,"name":"Vindi","company_name":"Empresa Teste
-        Ltda","registry_code":"65590080000128","email":"wagner.narde@vindi.com.br","status":"active"},{"id":6,"name":"Empresa
-        Teste","company_name":"Empresa Teste Ltda","registry_code":"65590080000128","email":"wagner.narde@vindi.com.br","status":"active"},{"id":7,"name":"Acme
-        Inc","company_name":"Acme","registry_code":"68106623000187","email":"lariteste@vindi.com.br","status":"active"},{"id":8,"name":"Lyon
-        Oliveira","company_name":"Industrias Acme SA","registry_code":"72819912000109","email":"lyon@vindi.com.br","status":"trial"},{"id":9,"name":"Lyon
-        Oliveira - Word Press","company_name":"Acme SA","registry_code":"65589357000100","email":"lyon@vindi.com.br","status":"trial"},{"id":10,"name":"Luis
-        Veloso","company_name":"Luis Veloso SA","registry_code":"41712204000132","email":"luis.veloso@vindi.com.br","status":"active"},{"id":11,"name":"DPI
-        - Produtos Internos","company_name":"DESENVOLVIMENTO DE PRODUTOS INTERNOS
-        LTDA","registry_code":"35620847225","email":"rodrigo.rebelatto@vindi.com.br","status":"trial"},{"id":12,"name":"Laerte
-        Guimaraes","company_name":"LG Ltda","registry_code":"92172384000148","email":"laerte.guimaraes@vindi.com.br","status":"trial"},{"id":14,"name":"teste","company_name":"teste
-        1","registry_code":"01234567890","email":"marcela.michelini@vindi.com.br","status":"trial"},{"id":15,"name":"Danielle
-        Valentini","company_name":"Danielle Valentini Me","registry_code":"46884422000178","email":"danielle.solimeo@vindi.com.br","status":"trial"},{"id":18,"name":"Bruno
-        SA","company_name":"Bruno SA","registry_code":"28528002000177","email":"teste@teste.com.br","status":"active"}]}'
+      string: '{"merchants":[]}'
     http_version: 
-  recorded_at: Mon, 11 Sep 2017 17:51:51 GMT
+  recorded_at: Thu, 25 Apr 2019 21:54:29 GMT
 recorded_with: VCR 3.0.3

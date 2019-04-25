@@ -16,8 +16,8 @@ RSpec.describe Vindi::Client::Charge do
   describe 'charge' do
     it 'returns a charge from vindi' do
       VCR.use_cassette("rest/charges/charge") do
-        charge_response = client.charge(71)
-        assert_requested :get, vindi_url("charges/71")
+        charge_response = client.charge(650735)
+        assert_requested :get, vindi_url("charges/650735")
         expect(charge_response).to be_kind_of(Hash)
       end
     end
@@ -27,8 +27,8 @@ RSpec.describe Vindi::Client::Charge do
     it 'returns a charge from vindi' do
       VCR.use_cassette("rest/charges/reissue") do
         charge_attributes = { payment_method_code: "debit_card" }
-        charge_response = client.reissue_charge(447, charge_attributes)
-        assert_requested :post, vindi_url("charges/447/reissue")
+        charge_response = client.reissue_charge(650735, charge_attributes)
+        assert_requested :post, vindi_url("charges/650735/reissue")
         expect(charge_response[:status]).to eq('pending')
       end
     end
@@ -38,8 +38,8 @@ RSpec.describe Vindi::Client::Charge do
     it 'returns a charge with amount updated from vindi' do
       VCR.use_cassette("rest/charges/refund_charge") do
         charge_attributes = { amount: 10 }
-        charge_response = client.refund_charge(513, charge_attributes)
-        assert_requested :post, vindi_url("charges/513/refund")
+        charge_response = client.refund_charge(631342, charge_attributes)
+        assert_requested :post, vindi_url("charges/631342/refund")
         expect(charge_response[:last_transaction][:amount]).to eq("10.0")
       end
     end
@@ -49,8 +49,8 @@ RSpec.describe Vindi::Client::Charge do
     it 'returns the updated charge' do
       VCR.use_cassette("rest/charges/update_charge") do
         charge_attributes = { installments: 2 }
-        charge_response = client.update_charge(71, charge_attributes)
-        assert_requested :put, vindi_url("charges/71")
+        charge_response = client.update_charge(650752, charge_attributes)
+        assert_requested :put, vindi_url("charges/650752")
         expect(charge_response[:installments]).to eq(2)
       end
     end
@@ -59,8 +59,8 @@ RSpec.describe Vindi::Client::Charge do
   describe 'delete_charge' do
     it 'returns the deleted charge' do
       VCR.use_cassette("rest/charges/delete_charge") do
-        charge_response = client.delete_charge(71)
-        assert_requested :delete, vindi_url("charges/71")
+        charge_response = client.delete_charge(650752)
+        assert_requested :delete, vindi_url("charges/650752")
         expect(charge_response).to be_kind_of(Hash)
       end
     end

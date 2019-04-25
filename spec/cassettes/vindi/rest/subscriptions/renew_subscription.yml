@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/subscriptions/65/renew
+    uri: https://sandbox-app.vindi.com.br/api/v1/subscriptions/65/renew
     body:
       encoding: UTF-8
       string: ''

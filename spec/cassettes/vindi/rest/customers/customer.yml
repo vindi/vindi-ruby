@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/customers/15
+    uri: https://sandbox-app.vindi.com.br/api/v1/customers/117101
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.1
+      - Vindi-Ruby/0.0.4
       Authorization:
-      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,30 +25,30 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 01 Sep 2017 22:42:40 GMT
+      - Thu, 25 Apr 2019 21:26:16 GMT
       Etag:
-      - W/"9fce2068f4984519bd04ba72813c4261"
+      - W/"dd814b7a1baad7a436c4b2abd69cbe10"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '117'
+      - '119'
       Rate-Limit-Reset:
-      - '1504305818'
+      - '1556227636'
       Server:
       - nginx
-      Set-Cookie:
-      - _mkra_ctxt=b11615865994742a1685ab96c4ae2780--200; path=/; max-age=5; HttpOnly
+      Vary:
+      - Origin
       X-Request-Id:
-      - 0f4e90a2-c4e9-49d3-97b3-e4432ef33b17
+      - 37ae70e1-8721-4c9b-881c-79d9a998fe1f
       X-Runtime:
-      - '0.021031'
+      - '0.025613'
       Content-Length:
-      - '391'
+      - '377'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"customer":{"id":15,"name":"My plan","email":"yuiouyty@gmail.com","registry_code":null,"code":null,"notes":null,"status":"inactive","created_at":"2017-07-07T18:48:20.000-03:00","updated_at":"2017-08-28T13:56:55.000-03:00","metadata":{},"address":{"street":null,"number":null,"additional_details":null,"zipcode":null,"neighborhood":null,"city":null,"state":null,"country":null},"phones":[]}}'
+      string: '{"customer":{"id":117101,"name":"Cliente Teste","email":"","registry_code":"","code":null,"notes":"","status":"active","created_at":"2019-01-28T18:47:11.000-02:00","updated_at":"2019-01-28T18:48:04.000-02:00","metadata":{},"address":{"street":null,"number":null,"additional_details":null,"zipcode":null,"neighborhood":null,"city":null,"state":null,"country":"BR"},"phones":[]}}'
     http_version: 
-  recorded_at: Fri, 01 Sep 2017 22:42:40 GMT
+  recorded_at: Thu, 25 Apr 2019 21:26:16 GMT
 recorded_with: VCR 3.0.3

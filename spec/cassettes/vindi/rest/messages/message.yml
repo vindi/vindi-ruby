@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/messages/154
+    uri: https://sandbox-app.vindi.com.br/api/v1/messages/144
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.1
+      - Vindi-Ruby/0.0.4
       Authorization:
-      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,31 +25,31 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 08 Sep 2017 17:21:09 GMT
+      - Thu, 25 Apr 2019 22:12:01 GMT
       Etag:
-      - W/"bbd83c6d24d1e47fb8ebbd5a7709ad84"
+      - W/"5642c0f89098a04314dddc22ef514b55"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '118'
+      - '119'
       Rate-Limit-Reset:
-      - '1504891328'
+      - '1556230381'
       Server:
       - nginx
-      Set-Cookie:
-      - _mkra_ctxt=fca6a5e0ffd0bbbd4ab8c10aa0d4e507--200; path=/; max-age=5; HttpOnly
+      Vary:
+      - Origin
       X-Request-Id:
-      - eaa38124-8afb-462b-a1be-9590c89c2a5b
+      - bf2ae11a-736f-4107-a904-0c8ba34c8093
       X-Runtime:
-      - '0.023898'
+      - '0.029255'
       Content-Length:
-      - '272'
+      - '274'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"message":{"id":154,"notification_type":"email","seen_at":null,"created_at":"2017-09-08T14:14:02.000-03:00","customer":{"id":20,"name":"Wagner
-        Narde","email":"wagner.narde@vindi.com.br","code":null},"charge":{"id":71},"notification":{"id":6,"notification_type":"email"}}}'
+      string: '{"message":{"id":144,"notification_type":"email","seen_at":null,"created_at":"2017-09-20T13:25:26.000-03:00","customer":{"id":71,"name":"Teste
+        Hook","email":"mail@teste.com"},"charge":{"id":343},"notification":{"id":53,"notification_type":"email"}}}'
     http_version: 
-  recorded_at: Fri, 08 Sep 2017 17:21:09 GMT
+  recorded_at: Thu, 25 Apr 2019 22:12:01 GMT
 recorded_with: VCR 3.0.3

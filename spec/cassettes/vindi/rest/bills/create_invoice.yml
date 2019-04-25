@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/bills/481/invoice
+    uri: https://sandbox-app.vindi.com.br/api/v1/bills/664689/invoice
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.1
+      - Vindi-Ruby/0.0.4
       Authorization:
-      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -27,31 +27,31 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 05 Sep 2017 20:37:43 GMT
+      - Thu, 25 Apr 2019 21:17:22 GMT
       Etag:
-      - W/"33759ee5ac9aa7614dc9e1c2f9ada20c"
+      - W/"e62c3b80cc3b81f42bc5b8ec3900bea7"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
       - '119'
       Rate-Limit-Reset:
-      - '1504643923'
+      - '1556227102'
       Server:
       - nginx
-      Set-Cookie:
-      - _mkra_ctxt=aa4c3e5e677a70b10ca503f89807bd41--200; path=/; max-age=5; HttpOnly
+      Vary:
+      - Origin
       X-Request-Id:
-      - 8760f0a2-ac01-4558-827b-687a98f0d1ee
+      - d38b080f-1ba5-4490-9e02-94365ae29267
       X-Runtime:
-      - '0.068644'
+      - '0.082009'
       Content-Length:
-      - '395'
+      - '431'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"invoices":[{"id":101,"amount":"250.0","status":"processing","integration_invoice_id":null,"integration_reference":null,"print_url":null,"description":null,"settings":null,"issued_at":null,"scheduled_at":null,"created_at":"2017-09-05T17:37:43.422-03:00","updated_at":"2017-09-05T17:37:43.422-03:00","bill":{"id":481,"code":null},"customer":{"id":396,"name":"Jane
-        Doe","email":"","code":null}}]}'
+      string: '{"invoices":[{"id":2316,"amount":"1.0","status":"processing","integration_invoice_id":null,"integration_reference":null,"print_url":null,"description":null,"settings":null,"issued_at":null,"accrued_on":"2019-04-25","scheduled_at":null,"created_at":"2019-04-25T18:17:22.253-03:00","updated_at":"2019-04-25T18:17:22.253-03:00","bill":{"id":664689,"code":null},"customer":{"id":117101,"name":"Cliente
+        Teste","email":"","code":null}}]}'
     http_version: 
-  recorded_at: Tue, 05 Sep 2017 20:37:43 GMT
+  recorded_at: Thu, 25 Apr 2019 21:17:22 GMT
 recorded_with: VCR 3.0.3

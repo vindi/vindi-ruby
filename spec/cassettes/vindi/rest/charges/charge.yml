@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/charges/71
+    uri: https://sandbox-app.vindi.com.br/api/v1/charges/650735
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.1
+      - Vindi-Ruby/0.0.4
       Authorization:
-      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,43 +25,43 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Wed, 06 Sep 2017 13:33:27 GMT
+      - Thu, 25 Apr 2019 21:19:18 GMT
       Etag:
-      - W/"d9a6dfcd3fc672d17d8631bc0998d2c6"
+      - W/"6cddc6e95be78c821696d348eb9a4f1b"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '118'
+      - '113'
       Rate-Limit-Reset:
-      - '1504704866'
+      - '1556227162'
       Server:
       - nginx
-      Set-Cookie:
-      - _mkra_ctxt=d0de41f05d50166a41050ce2fc22730d--200; path=/; max-age=5; HttpOnly
+      Vary:
+      - Origin
       X-Request-Id:
-      - 11d8d3f4-253d-4461-8b87-f190ed49ca66
+      - c9d00655-339b-4cd5-bb4d-2d9cb0885bf7
       X-Runtime:
-      - '0.025094'
+      - '0.033252'
       Content-Length:
-      - '565'
+      - '552'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJjaGFyZ2UiOnsiaWQiOjcxLCJhbW91bnQiOiIxMi4wIiwic3RhdHVzIjoi
-        cGVuZGluZyIsImR1ZV9hdCI6IjIwMTctMDctMjJUMjM6NTk6NTkuMDAwLTAz
-        OjAwIiwicGFpZF9hdCI6bnVsbCwiaW5zdGFsbG1lbnRzIjoxLCJhdHRlbXB0
-        X2NvdW50IjowLCJuZXh0X2F0dGVtcHQiOm51bGwsInByaW50X3VybCI6bnVs
-        bCwiY3JlYXRlZF9hdCI6IjIwMTctMDctMTlUMjE6MDk6NTYuMDAwLTAzOjAw
-        IiwidXBkYXRlZF9hdCI6IjIwMTctMDctMTlUMjE6MDk6NTYuMDAwLTAzOjAw
-        IiwibGFzdF90cmFuc2FjdGlvbiI6bnVsbCwicGF5bWVudF9tZXRob2QiOnsi
-        aWQiOjEzLCJwdWJsaWNfbmFtZSI6IkNhcnTDo28gZGUgY3LDqWRpdG8iLCJu
-        YW1lIjoiQ2FydMOjbyBkZSBjcsOpZGl0byIsImNvZGUiOiJjcmVkaXRfY2Fy
-        ZCIsInR5cGUiOiJQYXltZW50TWV0aG9kOjpDcmVkaXRDYXJkIn0sImJpbGwi
-        OnsiaWQiOjcxLCJjb2RlIjpudWxsfSwiY3VzdG9tZXIiOnsiaWQiOjIwLCJu
-        YW1lIjoiV2FnbmVyIE5hcmRlIiwiZW1haWwiOiJ3YWduZXIubmFyZGVAdmlu
-        ZGkuY29tLmJyIiwiY29kZSI6bnVsbH19fQ==
+        eyJjaGFyZ2UiOnsiaWQiOjY1MDczNSwiYW1vdW50IjoiMS4wIiwic3RhdHVz
+        IjoicGVuZGluZyIsImR1ZV9hdCI6IjIwMTktMDQtMjhUMjM6NTk6NTkuMDAw
+        LTAzOjAwIiwicGFpZF9hdCI6bnVsbCwiaW5zdGFsbG1lbnRzIjoxLCJhdHRl
+        bXB0X2NvdW50IjowLCJuZXh0X2F0dGVtcHQiOm51bGwsInByaW50X3VybCI6
+        bnVsbCwiY3JlYXRlZF9hdCI6IjIwMTktMDQtMjVUMTg6MTI6MzkuMDAwLTAz
+        OjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMDQtMjVUMTg6MTI6MzkuMDAwLTAz
+        OjAwIiwibGFzdF90cmFuc2FjdGlvbiI6bnVsbCwicGF5bWVudF9tZXRob2Qi
+        OnsiaWQiOjM0LCJwdWJsaWNfbmFtZSI6IkNhcnTDo28gZGUgY3LDqWRpdG8i
+        LCJuYW1lIjoiQ2FydMOjbyBkZSBjcsOpZGl0byIsImNvZGUiOiJjcmVkaXRf
+        Y2FyZCIsInR5cGUiOiJQYXltZW50TWV0aG9kOjpDcmVkaXRDYXJkIn0sImJp
+        bGwiOnsiaWQiOjY2NDY4NywiY29kZSI6bnVsbH0sImN1c3RvbWVyIjp7Imlk
+        IjoxMTcxMDEsIm5hbWUiOiJDbGllbnRlIFRlc3RlIiwiZW1haWwiOiIiLCJj
+        b2RlIjpudWxsfX19
     http_version: 
-  recorded_at: Wed, 06 Sep 2017 13:33:27 GMT
+  recorded_at: Thu, 25 Apr 2019 21:19:18 GMT
 recorded_with: VCR 3.0.3

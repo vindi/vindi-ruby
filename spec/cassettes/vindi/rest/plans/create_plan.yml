@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/plans
+    uri: https://sandbox-app.vindi.com.br/api/v1/plans
     body:
       encoding: UTF-8
       string: billing_trigger_day=3&billing_trigger_type=beginning_of_period&interval=months&interval_count=1&name=awesome+plan

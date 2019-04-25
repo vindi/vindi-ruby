@@ -6,8 +6,8 @@ RSpec.describe Vindi::Client::Discount do
   describe 'discount' do
     it 'returns a discount from vindi' do
       VCR.use_cassette("rest/discounts/discount") do
-        discount_response = client.discount(14)
-        assert_requested :get, vindi_url("discounts/14")
+        discount_response = client.discount(13318)
+        assert_requested :get, vindi_url("discounts/13318")
         expect(discount_response).to be_kind_of(Hash)
       end
     end
@@ -16,7 +16,7 @@ RSpec.describe Vindi::Client::Discount do
   describe 'create_discount' do
     it 'returns the newly created discount' do
       VCR.use_cassette("rest/discounts/create_discount") do
-        discount_attributes = { product_item_id: 118,
+        discount_attributes = { product_item_id: 104977,
                                 discount_type: "percentage", percentage: 10,
                                 amount: 1, quantity: 1, cycles: 1 }
 
@@ -30,8 +30,8 @@ RSpec.describe Vindi::Client::Discount do
   describe 'delete_discount' do
     it 'returns the deleted discount' do
       VCR.use_cassette("rest/discounts/delete_discount") do
-        discount_response = client.delete_discount(14)
-        assert_requested :delete, vindi_url("discounts/14")
+        discount_response = client.delete_discount(13318)
+        assert_requested :delete, vindi_url("discounts/13318")
         expect(discount_response[:percentage]).to eq('10.0')
       end
     end

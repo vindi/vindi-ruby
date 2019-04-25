@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: https://staging-app.vindi.com.br/api/v1/products/26
+    uri: https://sandbox-app.vindi.com.br/api/v1/products/26
     body:
       encoding: UTF-8
       string: name=t-shirt&pricing_schema%5Bprice%5D=100

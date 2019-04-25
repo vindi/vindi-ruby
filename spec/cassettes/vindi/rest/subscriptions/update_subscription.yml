@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: https://staging-app.vindi.com.br/api/v1/subscriptions/64
+    uri: https://sandbox-app.vindi.com.br/api/v1/subscriptions/64
     body:
       encoding: UTF-8
       string: payment_method_code=debit_card

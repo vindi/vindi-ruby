@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: delete
-    uri: https://staging-app.vindi.com.br/api/v1/customers/15
+    uri: https://sandbox-app.vindi.com.br/api/v1/customers/152374
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.1
+      - Vindi-Ruby/0.0.4
       Authorization:
-      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,30 +25,30 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 01 Sep 2017 22:42:42 GMT
+      - Thu, 25 Apr 2019 21:26:17 GMT
       Etag:
-      - W/"1607ae6ce7e08fa068ddc2a12cfac3f5"
+      - W/"cc918350477a8b0546036e0575a08456"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '114'
+      - '117'
       Rate-Limit-Reset:
-      - '1504305818'
+      - '1556227636'
       Server:
       - nginx
-      Set-Cookie:
-      - _mkra_ctxt=824e40bfa0fcc68c403c1a85eb6947a2--200; path=/; max-age=5; HttpOnly
+      Vary:
+      - Origin
       X-Request-Id:
-      - 20c58f9a-8683-4543-af44-a79a5374d3b9
+      - 19775dc4-ba21-47a5-9933-5ad150ac6fd2
       X-Runtime:
-      - '0.040866'
+      - '0.054262'
       Content-Length:
-      - '394'
+      - '382'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"customer":{"id":15,"name":"Johana Doe","email":"yuiouyty@gmail.com","registry_code":null,"code":null,"notes":null,"status":"archived","created_at":"2017-07-07T18:48:20.000-03:00","updated_at":"2017-09-01T19:42:42.052-03:00","metadata":{},"address":{"street":null,"number":null,"additional_details":null,"zipcode":null,"neighborhood":null,"city":null,"state":null,"country":null},"phones":[]}}'
+      string: '{"customer":{"id":152374,"name":"Johana Doe","email":null,"registry_code":null,"code":null,"notes":null,"status":"archived","created_at":"2019-04-25T18:24:50.000-03:00","updated_at":"2019-04-25T18:26:17.466-03:00","metadata":{},"address":{"street":null,"number":null,"additional_details":null,"zipcode":null,"neighborhood":null,"city":null,"state":null,"country":null},"phones":[]}}'
     http_version: 
-  recorded_at: Fri, 01 Sep 2017 22:42:42 GMT
+  recorded_at: Thu, 25 Apr 2019 21:26:17 GMT
 recorded_with: VCR 3.0.3
