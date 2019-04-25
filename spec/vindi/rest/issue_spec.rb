@@ -16,8 +16,8 @@ RSpec.describe Vindi::Client::Issue do
   describe 'issue' do
     it 'returns a issue from vindi' do
       VCR.use_cassette("rest/issues/issue") do
-        issue_response = client.issue(112)
-        assert_requested :get, vindi_url("issues/112")
+        issue_response = client.issue(2)
+        assert_requested :get, vindi_url("issues/2")
         expect(issue_response).to be_kind_of(Hash)
       end
     end
@@ -28,8 +28,8 @@ RSpec.describe Vindi::Client::Issue do
       VCR.use_cassette("rest/issues/update_issue") do
         issue_attributes = { status: "open" }
 
-        issue_response = client.update_issue(112, issue_attributes)
-        assert_requested :put, vindi_url("issues/112")
+        issue_response = client.update_issue(2, issue_attributes)
+        assert_requested :put, vindi_url("issues/2")
         expect(issue_response[:status]).to eq('open')
       end
     end

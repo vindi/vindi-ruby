@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic WklFYW54d0RaV0FJaXZxS2U3eUR1cU1pS2l0clVQenZORXVpVllmQktOUTo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,30 +25,30 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 21:40:27 GMT
+      - Mon, 11 Sep 2017 17:51:50 GMT
       Etag:
-      - W/"f97ee2836ccf0617f4a8388656e8fac8"
+      - W/"e60e2cbc8f3b34e3e0f61598d2535192"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '117'
+      - '119'
       Rate-Limit-Reset:
-      - '1556228460'
+      - '1505152370'
       Server:
       - nginx
-      Vary:
-      - Origin
+      Set-Cookie:
+      - _mkra_ctxt=61e575a0ccf5b5228f5280c328a21238--200; path=/; max-age=5; HttpOnly
       X-Request-Id:
-      - 40fab7e1-cb92-448c-b6eb-7f558a6717c7
+      - 6a8e3b96-5368-44cc-b7c5-f64aa76e6c8f
       X-Runtime:
-      - '0.022687'
+      - '0.013786'
       Content-Length:
-      - '151'
+      - '159'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"merchant":{"id":17,"name":"SANDBOX - TESTES","company_name":"TESTES","registry_code":"1234567890","email":"testes@mail.com","status":"active"}}'
+      string: '{"merchant":{"id":1,"name":"Vindi","company_name":"Empresa Teste Ltda","registry_code":"65590080000128","email":"wagner.narde@vindi.com.br","status":"active"}}'
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 21:40:27 GMT
+  recorded_at: Mon, 11 Sep 2017 17:51:50 GMT
 recorded_with: VCR 3.0.3

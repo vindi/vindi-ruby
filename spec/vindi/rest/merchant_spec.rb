@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe Vindi::Client::Merchant do
-  let(:client) { basic_auth_client(test_key) }
+  let(:client) { basic_auth_client("ZIEanxwDZWAIivqKe7yDuqMiKitrUPzvNEuiVYfBKNQ") }
 
   describe 'list_merchants' do
     it 'returns a collection of merchants' do
@@ -16,8 +16,8 @@ RSpec.describe Vindi::Client::Merchant do
   describe 'merchant' do
     it 'returns a merchant from vindi' do
       VCR.use_cassette("rest/merchants/merchant") do
-        merchant_response = client.merchant(17)
-        assert_requested :get, vindi_url("merchants/17")
+        merchant_response = client.merchant(7)
+        assert_requested :get, vindi_url("merchants/7")
         expect(merchant_response).to be_kind_of(Hash)
       end
     end

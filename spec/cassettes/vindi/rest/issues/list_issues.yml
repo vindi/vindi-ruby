@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,9 +25,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 21:35:34 GMT
+      - Mon, 11 Sep 2017 14:33:01 GMT
       Etag:
-      - W/"471309ff78a3036234d1745eb6ccc69a"
+      - W/"79096bd8a9eafdf56d772191274fb4cf"
       Per-Page:
       - '25'
       Rate-Limit-Limit:
@@ -35,25 +35,25 @@ http_interactions:
       Rate-Limit-Remaining:
       - '119'
       Rate-Limit-Reset:
-      - '1556228194'
+      - '1505140441'
       Server:
       - nginx
+      Set-Cookie:
+      - _mkra_ctxt=32bb3f1193c8faef229e8fd445ea175b--200; path=/; max-age=5; HttpOnly
       Total:
       - '1'
-      Vary:
-      - Origin
       X-Request-Id:
-      - 75af3e44-eac2-48f1-80ca-ff692304a301
+      - f0ec9a10-c61b-4736-9231-ada81a3a1bbc
       X-Runtime:
-      - '0.026246'
+      - '0.104678'
       Content-Length:
-      - '333'
+      - '318'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"issues":[{"id":112,"issue_type":"charge_overpay","status":"open","item_type":"Charge","item_id":635018,"data":{"expected_amount":"150.0","transaction_amount":"1500.0"},"created_at":"2019-04-25T18:35:16.000-03:00","updated_at":"2019-04-25T18:35:16.000-03:00","customer":{"id":117101,"name":"Cliente
-        Teste","email":"","code":null}}]}'
+      string: '{"issues":[{"id":2,"issue_type":"charge_underpay","status":"open","item_type":"Charge","item_id":475,"data":{"expected_amount":"200.0","transaction_amount":"3.0"},"created_at":"2017-09-08T09:36:50.000-03:00","updated_at":"2017-09-08T09:36:50.000-03:00","customer":{"id":396,"name":"Jane
+        Doe","email":"","code":null}}]}'
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 21:35:34 GMT
+  recorded_at: Mon, 11 Sep 2017 14:33:02 GMT
 recorded_with: VCR 3.0.3

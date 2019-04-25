@@ -5,12 +5,12 @@ http_interactions:
     uri: https://sandbox-app.vindi.com.br/api/v1/invoices
     body:
       encoding: UTF-8
-      string: amount=1&bill_id=662392
+      string: amount=1&bill_id=71
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -27,31 +27,31 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 21:34:24 GMT
+      - Fri, 08 Sep 2017 16:11:00 GMT
       Etag:
-      - W/"ee08a8d095d8caedcf283373b2bc6573"
+      - W/"878a822b7c578418d58509d94400d82b"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '118'
+      - '117'
       Rate-Limit-Reset:
-      - '1556228122'
+      - '1504887119'
       Server:
       - nginx
-      Vary:
-      - Origin
+      Set-Cookie:
+      - _mkra_ctxt=8601dd1ffa6d5fa6a27cb59d8d08d1ff--201; path=/; max-age=5; HttpOnly
       X-Request-Id:
-      - 0f4af8a6-56e0-40ff-9b64-a5728696022b
+      - bd544a97-e677-41a2-bb25-f89f4ee18d29
       X-Runtime:
-      - '0.064967'
+      - '0.077649'
       Content-Length:
-      - '428'
+      - '417'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"invoice":{"id":2317,"amount":"1.0","status":"processing","integration_invoice_id":null,"integration_reference":null,"print_url":null,"description":null,"settings":null,"issued_at":null,"accrued_on":"2019-04-25","scheduled_at":null,"created_at":"2019-04-25T18:34:23.972-03:00","updated_at":"2019-04-25T18:34:23.972-03:00","bill":{"id":662392,"code":null},"customer":{"id":117101,"name":"Cliente
-        Teste","email":"","code":null}}}'
+      string: '{"invoice":{"id":110,"amount":"1.0","status":"processing","integration_invoice_id":null,"integration_reference":null,"print_url":null,"description":null,"settings":null,"issued_at":null,"scheduled_at":null,"created_at":"2017-09-08T13:11:00.253-03:00","updated_at":"2017-09-08T13:11:00.253-03:00","bill":{"id":71,"code":null},"customer":{"id":20,"name":"Wagner
+        Narde","email":"wagner.narde@vindi.com.br","code":null}}}'
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 21:34:24 GMT
+  recorded_at: Fri, 08 Sep 2017 16:11:00 GMT
 recorded_with: VCR 3.0.3

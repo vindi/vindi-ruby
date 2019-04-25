@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: post
-    uri: https://sandbox-app.vindi.com.br/api/v1/charges/650735/reissue
+    uri: https://sandbox-app.vindi.com.br/api/v1/charges/447/reissue
     body:
       encoding: UTF-8
       string: payment_method_code=debit_card
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -27,43 +27,43 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 21:19:44 GMT
+      - Wed, 06 Sep 2017 14:17:18 GMT
       Etag:
-      - W/"18132aa9adfab96fa159ddef2f9db83d"
+      - W/"a6c8e753933a34392393102ecc74e23f"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
       - '119'
       Rate-Limit-Reset:
-      - '1556227243'
+      - '1504707498'
       Server:
       - nginx
-      Vary:
-      - Origin
+      Set-Cookie:
+      - _mkra_ctxt=f66acd707151c4373f3879c544339e82--201; path=/; max-age=5; HttpOnly
       X-Request-Id:
-      - fd314cf1-8c1a-4f1b-97c7-f00e9486f924
+      - e2a4db6a-9951-49d3-9b0d-378e6d084893
       X-Runtime:
-      - '0.239786'
+      - '0.205428'
       Content-Length:
-      - '550'
+      - '548'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJjaGFyZ2UiOnsiaWQiOjY1MDczOCwiYW1vdW50IjoiMS4wIiwic3RhdHVz
-        IjoicGVuZGluZyIsImR1ZV9hdCI6IjIwMTktMDQtMjhUMjM6NTk6NTkuMDAw
-        LTAzOjAwIiwicGFpZF9hdCI6bnVsbCwiaW5zdGFsbG1lbnRzIjoxLCJhdHRl
-        bXB0X2NvdW50IjowLCJuZXh0X2F0dGVtcHQiOm51bGwsInByaW50X3VybCI6
-        bnVsbCwiY3JlYXRlZF9hdCI6IjIwMTktMDQtMjVUMTg6MTk6NDQuMDAwLTAz
-        OjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMDQtMjVUMTg6MTk6NDQuMDAwLTAz
-        OjAwIiwibGFzdF90cmFuc2FjdGlvbiI6bnVsbCwicGF5bWVudF9tZXRob2Qi
-        OnsiaWQiOjE3MjYsInB1YmxpY19uYW1lIjoiQ2FydMOjbyBkZSBkw6liaXRv
-        IiwibmFtZSI6IkNhcnTDo28gZGUgRMOpYml0byIsImNvZGUiOiJkZWJpdF9j
-        YXJkIiwidHlwZSI6IlBheW1lbnRNZXRob2Q6OkRlYml0Q2FyZCJ9LCJiaWxs
-        Ijp7ImlkIjo2NjQ2ODcsImNvZGUiOm51bGx9LCJjdXN0b21lciI6eyJpZCI6
-        MTE3MTAxLCJuYW1lIjoiQ2xpZW50ZSBUZXN0ZSIsImVtYWlsIjoiIiwiY29k
-        ZSI6bnVsbH19fQ==
+        eyJjaGFyZ2UiOnsiaWQiOjQ5MCwiYW1vdW50IjoiMTAwLjAiLCJzdGF0dXMi
+        OiJwZW5kaW5nIiwiZHVlX2F0IjoiMjAxNy0wOS0wOVQyMzo1OTo1OS4wMDAt
+        MDM6MDAiLCJwYWlkX2F0IjpudWxsLCJpbnN0YWxsbWVudHMiOjEsImF0dGVt
+        cHRfY291bnQiOjAsIm5leHRfYXR0ZW1wdCI6bnVsbCwicHJpbnRfdXJsIjpu
+        dWxsLCJjcmVhdGVkX2F0IjoiMjAxNy0wOS0wNlQxMToxNzoxOC4wMDAtMDM6
+        MDAiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wOS0wNlQxMToxNzoxOC4wMDAtMDM6
+        MDAiLCJsYXN0X3RyYW5zYWN0aW9uIjpudWxsLCJwYXltZW50X21ldGhvZCI6
+        eyJpZCI6NDIsInB1YmxpY19uYW1lIjoiQ2FydMOjbyBkZSBkw6liaXRvIiwi
+        bmFtZSI6ImRlYml0X2NhcmQiLCJjb2RlIjoiZGViaXRfY2FyZCIsInR5cGUi
+        OiJQYXltZW50TWV0aG9kOjpEZWJpdENhcmQifSwiYmlsbCI6eyJpZCI6NDQ4
+        LCJjb2RlIjpudWxsfSwiY3VzdG9tZXIiOnsiaWQiOjIsIm5hbWUiOiJKb2hh
+        bmEgRG9lIiwiZW1haWwiOiJlbWFpbEBlbWFpbC5jb20iLCJjb2RlIjoib29v
+        b29vbyJ9fX0=
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 21:19:44 GMT
+  recorded_at: Wed, 06 Sep 2017 14:17:18 GMT
 recorded_with: VCR 3.0.3

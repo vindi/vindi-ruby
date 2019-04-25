@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://sandbox-app.vindi.com.br/api/v1/bill_items/907549
+    uri: https://sandbox-app.vindi.com.br/api/v1/bill_items/133
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,33 +25,30 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 21:04:48 GMT
+      - Wed, 06 Sep 2017 12:44:05 GMT
       Etag:
-      - W/"cce1a754abb6c6dbed2ad557934114d0"
+      - W/"d044ff254ec9b8557b29b44ff42fa1c3"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
-      - '117'
+      - '119'
       Rate-Limit-Reset:
-      - '1556226304'
+      - '1504701905'
       Server:
       - nginx
-      Vary:
-      - Origin
+      Set-Cookie:
+      - _mkra_ctxt=55f08ef1ad7f004fd9892bcc96315832--200; path=/; max-age=5; HttpOnly
       X-Request-Id:
-      - d04ebe2a-7dbf-4bbe-a9f5-572947e79071
+      - ed499ba1-f3eb-41ae-adbf-4dee437edebc
       X-Runtime:
-      - '0.039827'
+      - '0.025641'
       Content-Length:
-      - '581'
+      - '216'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"bill_item":{"id":907549,"amount":"50.0","quantity":1,"pricing_range_id":null,"description":null,"pricing_schema":{"id":35296,"short_format":"R$
-        50,00 / unidade","price":"50.0","minimum_price":null,"schema_type":"per_unit","pricing_ranges":[],"created_at":"2018-06-18T18:10:53.000-03:00"},"product":{"id":9267,"name":"Frete
-        (Taxa - Frete)","code":"taxa-frete"},"product_item":{"id":49543,"product":{"id":9267,"name":"Frete
-        (Taxa - Frete)","code":"taxa-frete"}},"discount":null,"usages":[{"id":844095,"quantity":1,"description":null,"created_at":"2019-04-25T18:04:10.000-03:00"}]}}'
+      string: '{"bill_item":{"id":133,"amount":"12.0","quantity":null,"pricing_range_id":null,"description":"","pricing_schema":null,"product":{"id":26,"name":"t-shirt","code":null},"product_item":null,"discount":null,"usages":[]}}'
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 21:04:48 GMT
+  recorded_at: Wed, 06 Sep 2017 12:44:05 GMT
 recorded_with: VCR 3.0.3

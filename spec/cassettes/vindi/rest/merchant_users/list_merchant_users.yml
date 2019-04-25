@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,9 +25,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 21:58:14 GMT
+      - Tue, 12 Sep 2017 14:14:30 GMT
       Etag:
-      - W/"fffada0601f24e0074ba804e6fb4b533"
+      - W/"1c1c73b761f762f6322bc8992e935c16"
       Per-Page:
       - '25'
       Rate-Limit-Limit:
@@ -35,24 +35,25 @@ http_interactions:
       Rate-Limit-Remaining:
       - '119'
       Rate-Limit-Reset:
-      - '1556229554'
+      - '1505225730'
       Server:
       - nginx
+      Set-Cookie:
+      - _mkra_ctxt=8c61ce7921b41560e433e8b4f155b6d4--200; path=/; max-age=5; HttpOnly
       Total:
       - '1'
-      Vary:
-      - Origin
       X-Request-Id:
-      - eab64c2b-d23e-4094-9dde-636388fa6962
+      - 51451566-e860-4aa0-91a8-e4c18081a93b
       X-Runtime:
-      - '0.031829'
+      - '0.034203'
       Content-Length:
-      - '293'
+      - '268'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"merchant_users":[{"id":17,"status":"active","last_sign_in_at":"2018-01-24T12:19:37.000-02:00","user":{"id":11,"name":"Tester","email":"juninholtl@gmail.com","status":"active","created_at":"2017-09-05T15:51:43.000-03:00"},"role":{"id":62,"name":"Administrador","base_role":"Administrator"}}]}'
+      string: '{"merchant_users":[{"id":38,"status":"active","last_sign_in_at":null,"user":{"id":27,"name":"Jane
+        Doe","email":"testejane@teste.com","status":"invitation_sent","created_at":"2017-09-11T17:23:55.000-03:00"},"role":{"id":10,"name":"Observador","base_role":"ReadOnly"}}]}'
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 21:58:14 GMT
+  recorded_at: Tue, 12 Sep 2017 14:14:30 GMT
 recorded_with: VCR 3.0.3

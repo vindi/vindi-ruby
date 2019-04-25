@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 21:31:18 GMT
+      - Fri, 08 Sep 2017 20:22:23 GMT
       Etag:
       - W/"2b007a838f08f16cb8b4d6ae21d63427"
       Per-Page:
@@ -35,17 +35,17 @@ http_interactions:
       Rate-Limit-Remaining:
       - '119'
       Rate-Limit-Reset:
-      - '1556227938'
+      - '1504902203'
       Server:
       - nginx
+      Set-Cookie:
+      - _mkra_ctxt=29922be2d029fbd0f29f3f1914b3df53--200; path=/; max-age=5; HttpOnly
       Total:
       - '0'
-      Vary:
-      - Origin
       X-Request-Id:
-      - 31a76393-75b8-49de-aea6-9571f1769dbc
+      - 718d939e-a010-4eb1-ae72-fdfb31cb1970
       X-Runtime:
-      - '0.040031'
+      - '0.035117'
       Content-Length:
       - '21'
       Connection:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"import_batches":[]}'
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 21:31:18 GMT
+  recorded_at: Fri, 08 Sep 2017 20:22:24 GMT
 recorded_with: VCR 3.0.3

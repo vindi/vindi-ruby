@@ -5,12 +5,12 @@ http_interactions:
     uri: https://sandbox-app.vindi.com.br/api/v1/discounts
     body:
       encoding: UTF-8
-      string: amount=1&cycles=1&discount_type=percentage&percentage=10&product_item_id=104977&quantity=1
+      string: amount=1&cycles=1&discount_type=percentage&percentage=10&product_item_id=118&quantity=1
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -27,37 +27,30 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 21:28:21 GMT
+      - Mon, 04 Sep 2017 19:01:41 GMT
       Etag:
-      - W/"57561a5661f5733d2d1c51f01f5c0569"
+      - W/"2724ef2adb5e681a1186ace5216944f8"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
       - '118'
       Rate-Limit-Reset:
-      - '1556227760'
+      - '1504551760'
       Server:
       - nginx
-      Vary:
-      - Origin
+      Set-Cookie:
+      - _mkra_ctxt=f0d57d0225e003463cbb088141cad820--201; path=/; max-age=5; HttpOnly
       X-Request-Id:
-      - 42431a8e-db79-4e19-ae35-ab22ba1b95f6
+      - 237c1616-8ce6-4dab-a5f1-d3db1637fcf3
       X-Runtime:
-      - '0.051244'
+      - '0.050874'
       Content-Length:
-      - '305'
+      - '293'
       Connection:
       - keep-alive
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkaXNjb3VudCI6eyJpZCI6MTMzMTgsImRpc2NvdW50X3R5cGUiOiJwZXJj
-        ZW50YWdlIiwicGVyY2VudGFnZSI6IjEwLjAiLCJhbW91bnQiOiIxLjAiLCJx
-        dWFudGl0eSI6MSwiY3ljbGVzIjoxLCJzdGF0dXMiOiJhY3RpdmUiLCJjcmVh
-        dGVkX2F0IjoiMjAxOS0wNC0yNVQxODoyODoyMS44MzQtMDM6MDAiLCJ1cGRh
-        dGVkX2F0IjoiMjAxOS0wNC0yNVQxODoyODoyMS44MzQtMDM6MDAiLCJwcm9k
-        dWN0X2l0ZW0iOnsiaWQiOjEwNDk3NywicHJvZHVjdCI6eyJpZCI6MTgzNCwi
-        bmFtZSI6IjIgVXN1w6FyaW9zIiwiY29kZSI6bnVsbH19fX0=
+      encoding: UTF-8
+      string: '{"discount":{"id":15,"discount_type":"percentage","percentage":"10.0","amount":"1.0","quantity":1,"cycles":1,"status":"active","created_at":"2017-09-04T16:01:41.914-03:00","updated_at":"2017-09-04T16:01:41.914-03:00","product_item":{"id":118,"product":{"id":26,"name":"t-shirt","code":null}}}}'
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 21:28:21 GMT
+  recorded_at: Mon, 04 Sep 2017 19:01:41 GMT
 recorded_with: VCR 3.0.3

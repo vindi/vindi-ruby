@@ -5,12 +5,12 @@ http_interactions:
     uri: https://sandbox-app.vindi.com.br/api/v1/merchant_users
     body:
       encoding: UTF-8
-      string: email=janedoe%40teste.com&name=Jane+Doe&role_id=62
+      string: email=janedoe%40teste.com&name=Jane+Doe&role_id=10
     headers:
       User-Agent:
-      - Vindi-Ruby/0.0.4
+      - Vindi-Ruby/0.0.1
       Authorization:
-      - Basic VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo=
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
@@ -27,31 +27,31 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 25 Apr 2019 22:00:40 GMT
+      - Tue, 12 Sep 2017 14:25:47 GMT
       Etag:
-      - W/"519ec4c21be6b4386f90c8cc4667b9f2"
+      - W/"cd3f7f3996569a57b0da3d00bb7d25df"
       Rate-Limit-Limit:
       - '120'
       Rate-Limit-Remaining:
       - '119'
       Rate-Limit-Reset:
-      - '1556229700'
+      - '1505226407'
       Server:
       - nginx
-      Vary:
-      - Origin
+      Set-Cookie:
+      - _mkra_ctxt=395a66ebb24d4641c50d289967c75293--201; path=/; max-age=5; HttpOnly
       X-Request-Id:
-      - c7ca0943-2f04-4e25-91e4-3c1bdbfe4bcd
+      - 4b698846-a28c-4a02-bbd1-28006f048be0
       X-Runtime:
-      - '0.074419'
+      - '0.139079'
       Content-Length:
-      - '275'
+      - '263'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"merchant_user":{"id":2302,"status":"active","last_sign_in_at":null,"user":{"id":2030,"name":"Jane
-        Doe","email":"janedoe@teste.com","status":"invitation_sent","created_at":"2019-04-25T18:58:16.000-03:00"},"role":{"id":62,"name":"Administrador","base_role":"Administrator"}}}'
+      string: '{"merchant_user":{"id":40,"status":"active","last_sign_in_at":null,"user":{"id":29,"name":"Jane
+        Doe","email":"janedoe@teste.com","status":"invitation_sent","created_at":"2017-09-12T11:25:47.000-03:00"},"role":{"id":10,"name":"Observador","base_role":"ReadOnly"}}}'
     http_version: 
-  recorded_at: Thu, 25 Apr 2019 22:00:40 GMT
+  recorded_at: Tue, 12 Sep 2017 14:25:47 GMT
 recorded_with: VCR 3.0.3

@@ -16,8 +16,8 @@ RSpec.describe Vindi::Client::Invoice do
   describe 'invoice' do
     it 'returns a invoice from vindi' do
       VCR.use_cassette("rest/invoices/invoice") do
-        invoice_response = client.invoice(2316)
-        assert_requested :get, vindi_url("invoices/2316")
+        invoice_response = client.invoice(108)
+        assert_requested :get, vindi_url("invoices/108")
         expect(invoice_response).to be_kind_of(Hash)
       end
     end
@@ -26,7 +26,7 @@ RSpec.describe Vindi::Client::Invoice do
   describe 'create_invoice' do
     it 'returns the newly created invoice' do
       VCR.use_cassette("rest/invoices/create_invoice") do
-        invoice_attributes = { bill_id: 662392, amount: 1 }
+        invoice_attributes = { bill_id: 71, amount: 1 }
 
         invoice_response = client.create_invoice(invoice_attributes)
         assert_requested :post, vindi_url("invoices")
@@ -38,8 +38,8 @@ RSpec.describe Vindi::Client::Invoice do
   describe 'delete_invoice' do
     it 'returns the deleted invoice' do
       VCR.use_cassette("rest/invoices/delete_invoice") do
-        invoice_response = client.delete_invoice(2316)
-        assert_requested :delete, vindi_url("invoices/2316")
+        invoice_response = client.delete_invoice(108)
+        assert_requested :delete, vindi_url("invoices/108")
         expect(invoice_response[:status]).to eq('canceled')
       end
     end
