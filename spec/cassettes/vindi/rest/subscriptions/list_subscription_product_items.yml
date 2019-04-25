@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox-app.vindi.com.br/api/v1/subscriptions/91327/product_items
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.4
+      Authorization:
+      - Basic bEFzc2xFRGhRZkF3SnhMaGdKUnhkbkdmR0FYSVFfYjAtRlJ6RXZJMTk4Zzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 26 Apr 2019 20:15:04 GMT
+      Etag:
+      - W/"b4cd04e22b42280aff7dfaa6fa46d641"
+      Per-Page:
+      - '25'
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1556309764'
+      Server:
+      - nginx
+      Total:
+      - '1'
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 7e6bf132-f88e-4c1f-bb07-9633ca342856
+      X-Runtime:
+      - '0.050027'
+      Content-Length:
+      - '433'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwcm9kdWN0X2l0ZW1zIjpbeyJpZCI6MTI2ODEyLCJzdGF0dXMiOiJhY3RpdmUiLCJ1c2VzIjoxLCJjeWNsZXMiOm51bGwsInF1YW50aXR5IjoxLCJjcmVhdGVkX2F0IjoiMjAxOS0wNC0xOFQxMTozMDoxNC4wMDAtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxOS0wNC0xOFQxMTozMDoxNC4wMDAtMDM6MDAiLCJwcm9kdWN0Ijp7ImlkIjoxODc0MCwibmFtZSI6IlBsYW5vIELDoXNpY28iLCJjb2RlIjoiYmFzaWMifSwicHJpY2luZ19zY2hlbWEiOnsiaWQiOjkwOTk0LCJzaG9ydF9mb3JtYXQiOiJSJCAxOTcsMDAiLCJwcmljZSI6IjE5Ny4wIiwibWluaW11bV9wcmljZSI6bnVsbCwic2NoZW1hX3R5cGUiOiJmbGF0IiwicHJpY2luZ19yYW5nZXMiOltdLCJjcmVhdGVkX2F0IjoiMjAxOS0wNC0xN1QxMzozOToyOS4wMDAtMDM6MDAifSwiZGlzY291bnRzIjpbXX1dfQ==
+    http_version: 
+  recorded_at: Fri, 26 Apr 2019 20:15:05 GMT
+recorded_with: VCR 4.0.0

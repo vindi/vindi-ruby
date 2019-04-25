@@ -80,6 +80,16 @@ module Vindi
       def delete_subscription(subscription_id, options = {})
         delete("subscriptions/#{subscription_id}", options)[:subscription]
       end
+
+      # List product items for a subscription
+      #
+      # @params subscription_id
+      # @see https://vindi.github.io/api-docs/dist/#!/subscriptions/GET_version_subscriptions_id_product_items_format
+      # @example List subscription product items #2
+      #   client.list_subscription_product_items
+      def list_subscription_product_items(subscription_id, options = {})
+        get("subscriptions/#{subscription_id}/product_items", options)[:product_items]
+      end
     end
   end
 end

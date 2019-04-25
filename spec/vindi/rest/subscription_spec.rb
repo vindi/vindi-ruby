@@ -77,4 +77,14 @@ RSpec.describe Vindi::Client::Subscription do
       end
     end
   end
+
+  describe 'list_subscription_product_items' do
+    it 'returns the associated product items of subscription' do
+      VCR.use_cassette("rest/subscriptions/list_subscription_product_items") do
+        product_items = client.list_subscription_product_items(91327)
+        assert_requested :get, vindi_url("subscriptions/91327/product_items")
+        expect(product_items).to be_kind_of(Array)
+      end
+    end
+  end
 end
