@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe Vindi::Client::Merchant do
-  let(:client) { basic_auth_client("T9qEAJ7vIU9Unj0vmiZFDVjywt2Vn-MhYHcjrjwB6n0") }
+  let(:client) { basic_auth_client(test_key) }
 
   describe 'list_merchants' do
     it 'returns a collection of merchants' do

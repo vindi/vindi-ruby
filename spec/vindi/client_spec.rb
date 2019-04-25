@@ -4,7 +4,7 @@ RSpec.describe Vindi::Client do
   let(:options) do
     { key: key, default_media_type: 'application/vnd.api+json' }
   end
-  let(:key) { 'T9qEAJ7vIU9Unj0vmiZFDVjywt2Vn-MhYHcjrjwB6n0' }
+  let(:key) { test_key }
   let(:client) { basic_auth_client }
 
   context 'initialization' do
