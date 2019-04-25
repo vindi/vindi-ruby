@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/discounts
+    uri: https://sandbox-app.vindi.com.br/api/v1/discounts
     body:
       encoding: UTF-8
       string: amount=1&cycles=1&discount_type=percentage&percentage=10&product_item_id=118&quantity=1

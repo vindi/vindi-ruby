@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/payment_profiles/18
+    uri: https://sandbox-app.vindi.com.br/api/v1/payment_profiles/18
     body:
       encoding: US-ASCII
       string: ''

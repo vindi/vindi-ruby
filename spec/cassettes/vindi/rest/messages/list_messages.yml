@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/messages
+    uri: https://sandbox-app.vindi.com.br/api/v1/messages
     body:
       encoding: US-ASCII
       string: ''
@@ -29,7 +29,7 @@ http_interactions:
       Etag:
       - W/"7fe8dbd70fc45d1831aa699f41c2d15e"
       Link:
-      - <https://staging-app.vindi.com.br/api/v1/messages?page=2>; rel="last", <https://staging-app.vindi.com.br/api/v1/messages?page=2>;
+      - <https://sandbox-app.vindi.com.br/api/v1/messages?page=2>; rel="last", <https://sandbox-app.vindi.com.br/api/v1/messages?page=2>;
         rel="next"
       Per-Page:
       - '25'

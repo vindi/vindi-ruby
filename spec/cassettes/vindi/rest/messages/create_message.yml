@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/messages
+    uri: https://sandbox-app.vindi.com.br/api/v1/messages
     body:
       encoding: UTF-8
       string: charge_id=71&customer_id=2&email=cliente%40email.com&notification_id=6

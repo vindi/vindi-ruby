@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/charges/447/reissue
+    uri: https://sandbox-app.vindi.com.br/api/v1/charges/447/reissue
     body:
       encoding: UTF-8
       string: payment_method_code=debit_card

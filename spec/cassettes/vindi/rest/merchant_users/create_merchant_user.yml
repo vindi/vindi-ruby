@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/merchant_users
+    uri: https://sandbox-app.vindi.com.br/api/v1/merchant_users
     body:
       encoding: UTF-8
       string: email=janedoe%40teste.com&name=Jane+Doe&role_id=10

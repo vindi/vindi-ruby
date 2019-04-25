@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/notifications
+    uri: https://sandbox-app.vindi.com.br/api/v1/notifications
     body:
       encoding: UTF-8
       string: content=Hey%2C+Hoops%21&name=Hoops&notification_type=email&status=active&subject=Hoops&trigger_day=5&trigger_type=charge_due_at

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/movements
+    uri: https://sandbox-app.vindi.com.br/api/v1/movements
     body:
       encoding: UTF-8
       string: amount=1&bill_id=509&movement_type=credit

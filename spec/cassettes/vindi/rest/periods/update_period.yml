@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: https://staging-app.vindi.com.br/api/v1/periods/360
+    uri: https://sandbox-app.vindi.com.br/api/v1/periods/360
     body:
       encoding: UTF-8
       string: billing_at=27%2F09%2F2017

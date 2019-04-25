@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/usages
+    uri: https://sandbox-app.vindi.com.br/api/v1/usages
     body:
       encoding: UTF-8
       string: period_id=382&product_item_id=141&quantity=3

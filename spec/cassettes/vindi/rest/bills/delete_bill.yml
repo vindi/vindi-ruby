@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: https://staging-app.vindi.com.br/api/v1/bills/475
+    uri: https://sandbox-app.vindi.com.br/api/v1/bills/475
     body:
       encoding: US-ASCII
       string: ''

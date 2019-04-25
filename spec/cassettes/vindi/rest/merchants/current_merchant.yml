@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/merchants/current
+    uri: https://sandbox-app.vindi.com.br/api/v1/merchants/current
     body:
       encoding: US-ASCII
       string: ''

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/transactions
+    uri: https://sandbox-app.vindi.com.br/api/v1/transactions
     body:
       encoding: UTF-8
       string: amount=100&charge_id=457&paid_at=2017-09-08&payment_method_code=cash

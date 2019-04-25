@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: put
-    uri: https://staging-app.vindi.com.br/api/v1/issues/2
+    uri: https://sandbox-app.vindi.com.br/api/v1/issues/2
     body:
       encoding: UTF-8
       string: status=open

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://staging-app.vindi.com.br/api/v1/charges
+    uri: https://sandbox-app.vindi.com.br/api/v1/charges
     body:
       encoding: US-ASCII
       string: ''
@@ -29,7 +29,7 @@ http_interactions:
       Etag:
       - W/"07deff6352a1b0ae7bab0ce1e39c7fde"
       Link:
-      - <https://staging-app.vindi.com.br/api/v1/charges?page=2>; rel="last", <https://staging-app.vindi.com.br/api/v1/charges?page=2>;
+      - <https://sandbox-app.vindi.com.br/api/v1/charges?page=2>; rel="last", <https://sandbox-app.vindi.com.br/api/v1/charges?page=2>;
         rel="next"
       Per-Page:
       - '25'

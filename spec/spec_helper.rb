@@ -1,7 +1,6 @@
 require 'simplecov'
 SimpleCov.start
 
-VINDI_STAGING_ENDPOINT = "https://staging-app.vindi.com.br/api/v1/".freeze
 VINDI_SANDBOX_ENDPOINT = "https://sandbox-app.vindi.com.br/api/v1/".freeze
 
 require 'vindi'
@@ -27,13 +26,13 @@ end
 
 def vindi_url(url)
   return url if url =~ /^https/
-  url.prepend(VINDI_STAGING_ENDPOINT)
+  url.prepend(VINDI_SANDBOX_ENDPOINT)
 end
 
 def test_key
-  'xDw3elPwddlzqgFzJqZXkiy-jZlzVvY7L1aVdcDbMHg'
+  'T9qEAJ7vIU9Unj0vmiZFDVjywt2Vn-MhYHcjrjwB6n0'
 end
 
 def basic_auth_client(key = test_key)
-  Vindi::Client.new(key: key, api_endpoint: VINDI_STAGING_ENDPOINT)
+  Vindi::Client.new(key: key, api_endpoint: VINDI_SANDBOX_ENDPOINT)
 end

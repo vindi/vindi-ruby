@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://staging-app.vindi.com.br/api/v1/subscriptions
+    uri: https://sandbox-app.vindi.com.br/api/v1/subscriptions
     body:
       encoding: UTF-8
       string: customer_id=2&payment_method_code=credit_card&plan_id=15&product_items%5B%5D%5Bproduct_id%5D=26

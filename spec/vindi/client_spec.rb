@@ -4,7 +4,7 @@ RSpec.describe Vindi::Client do
   let(:options) do
     { key: key, default_media_type: 'application/vnd.api+json' }
   end
-  let(:key) { 'xDw3elPwddlzqgFzJqZXkiy-jZlzVvY7L1aVdcDbMHg' }
+  let(:key) { test_key }
   let(:client) { basic_auth_client }
 
   context 'initialization' do
@@ -57,7 +57,7 @@ RSpec.describe Vindi::Client do
 
     describe 'authorization' do
       it 'makes a authenticated request' do
-        token = 'eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo='
+        token = 'VDlxRUFKN3ZJVTlVbmowdm1pWkZEVmp5d3QyVm4tTWhZSGNqcmp3QjZuMDo='
 
         root_request = stub_get('')
           .with({ headers: {'Authorization': "Basic #{token}"}})
