@@ -11,7 +11,8 @@ module Vindi
       def list_charges(options = {})
         get('charges', options)[:charges]
       end
-      
+
+
       # Get a single charge from a merchant
       #
       # @param charge_id [Integer] ID of the charge
@@ -88,6 +89,19 @@ module Vindi
       #   client.delete_charge(2)
       def delete_charge(charge_id, options = {})
         delete("charges/#{charge_id}", options)[:charge]
+      end
+
+
+      # Capture a charge from merchant vindi
+      #
+      # @params charge_id [Integer] ID of the charge
+      # @option options [Hash] :options charge attributes
+      #
+      # @see https://vindi.github.io/api-docs/dist/#!/charges/POST_version_charges_id_capture_format
+      # @example Capture charge #2
+      #   client.capture_charge(2)
+      def capture_charge(charge_id, options = {})
+        post("charges/#{charge_id}/capture", options)[:charge]
       end
     end
   end
