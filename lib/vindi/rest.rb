@@ -22,6 +22,7 @@ module Vindi
     include Vindi::Rest::Invoice
     include Vindi::Rest::Message
     include Vindi::Rest::ImportBatch
+    include Vindi::Rest::ExportBatch
     include Vindi::Rest::Notification
     include Vindi::Rest::Issue
     include Vindi::Rest::Merchant
