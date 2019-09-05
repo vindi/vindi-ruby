@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox-app.vindi.com.br/api/v1/customers/179911/unarchive
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.5
+      Authorization:
+      - Basic eW1xTWxYYzBWY1BiUEpNcW82akJ1T0doN3BlUGhXVHF5YXZlMVpjY05NODo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 05 Sep 2019 12:15:27 GMT
+      Etag:
+      - W/"e2a593cdf74b793a5f04702d0380bcb6"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1567685787'
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Request-Id:
+      - c3cf54d6-3b77-454f-b212-d0f174f69695
+      X-Runtime:
+      - '0.052906'
+      Content-Length:
+      - '389'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"customer":{"id":179911,"name":"3D Batman Roundup","email":null,"registry_code":null,"code":null,"notes":null,"status":"inactive","created_at":"2019-07-30T17:04:08.000-03:00","updated_at":"2019-09-05T09:15:27.242-03:00","metadata":{},"address":{"street":null,"number":null,"additional_details":null,"zipcode":null,"neighborhood":null,"city":null,"state":null,"country":null},"phones":[]}}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 12:15:27 GMT
+recorded_with: VCR 3.0.3

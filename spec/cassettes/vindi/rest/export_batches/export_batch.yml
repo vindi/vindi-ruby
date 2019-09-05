@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox-app.vindi.com.br/api/v1/export_batches/15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.5
+      Authorization:
+      - Basic eW1xTWxYYzBWY1BiUEpNcW82akJ1T0doN3BlUGhXVHF5YXZlMVpjY05NODo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 05 Sep 2019 12:28:58 GMT
+      Etag:
+      - W/"3a88486f7ad4c126b4a7fb0bd1a8d60f"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1567686598'
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 3133d78d-6028-4fac-b63f-099c6bf0353e
+      X-Runtime:
+      - '0.024881'
+      Content-Length:
+      - '675'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJleHBvcnRfYmF0Y2giOnsiaWQiOjE1LCJzdGF0dXMiOiJleHBvcnRlZCIsInVybCI6Imh0dHBzOi8vdmluZGktc2J4LXJlY3VycmVudC5zMy5hbWF6b25hd3MuY29tL2V4cG9ydF9iYXRjaGVzL2JhdGNoZXMvMDAwLzAwMC8wMTUvb3JpZ2luYWwvQ0IwNTA0TEEuUkVNP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2XHUwMDI2WC1BbXotQ3JlZGVudGlhbD1BS0lBSUFaN0dLUlRMTlZQUExCQSUyRjIwMTkwOTA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3RcdTAwMjZYLUFtei1EYXRlPTIwMTkwOTA1VDEyMjg1OFpcdTAwMjZYLUFtei1FeHBpcmVzPTYwMFx1MDAyNlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdFx1MDAyNlgtQW16LVNpZ25hdHVyZT02ZWM0ODQ2ZmNjMGRjMjhmZjE4MTc2ZTJhZTRlMTIzZmMwY2MzOTU0YTk2NTkxZDI2YjM3Yjc4ZDA5ZTBlMzk0IiwiY3JlYXRlZF9hdCI6IjIwMTgtMDQtMDVUMTM6MzU6NDUuMDAwLTAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMTgtMDUtMDlUMTY6MTk6NTMuMDAwLTAzOjAwIiwicGF5bWVudF9tZXRob2QiOnsiaWQiOjMzNywicHVibGljX25hbWUiOiJEw6liaXRvIGVtIGNvbnRhIiwibmFtZSI6ImTDqWJpdG8gdGVzdGUiLCJjb2RlIjoiYmFua19kZWJpdCIsInR5cGUiOiJQYXltZW50TWV0aG9kOjpCYW5rRGViaXQifX19
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 12:28:58 GMT
+recorded_with: VCR 3.0.3

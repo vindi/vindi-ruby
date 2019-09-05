@@ -51,7 +51,17 @@ RSpec.describe Vindi::Client::Customer do
       VCR.use_cassette("rest/customers/delete_customer") do
         customer_response = client.delete_customer(15)
         assert_requested :delete, vindi_url("customers/15")
-        expect(customer_response[:name]).to eq('Johana Doe')
+        expect(customer_response[:status]).to eq('archived')
+      end
+    end
+  end
+
+  describe 'unarchive_customer' do
+    it 'unarchives a customer' do
+      VCR.use_cassette("rest/customers/unarchive_customer") do
+        customer_response = client.unarchive_customer(179911)
+        assert_requested :post, vindi_url("customers/179911/unarchive")
+        expect(customer_response[:status]).to eq('inactive')
       end
     end
   end
