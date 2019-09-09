@@ -4,7 +4,7 @@ RSpec.describe Vindi::Client::ExportBatch do
   let(:client) { basic_auth_client }
 
   describe 'list_export_batches' do
-      it 'returns a collection of export batches' do
+    it 'returns a collection of export batches' do
       VCR.use_cassette("rest/export_batches/list_export_batches") do
         list_export_batches_response = client.list_export_batches
         assert_requested :get, vindi_url("export_batches")
