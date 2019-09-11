@@ -5,7 +5,7 @@ module Vindi
     # @see https://vindi.github.io/api-docs/dist/#!/import_batches
     module ImportBatch
 
-      # List import_batchs for the authenticate user
+      # List import_batches for the authenticate user
       # @option options [Integer] :page (1) Page number.
       # @option options [Integer] :merchant Merchant account
       # @return [Array<Hash>] A list of imported batches for a merchant.

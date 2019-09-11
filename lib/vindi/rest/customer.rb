@@ -11,7 +11,7 @@ module Vindi
       def list_customers(options = {})
         get('customers', options)[:customers]
       end
-      
+
       # Get a single customer from a merchant
       #
       # @param customer_id [Integer] ID of the customer
@@ -24,9 +24,9 @@ module Vindi
       end
 
       # Create a customer for a merchant vindi
-      # 
+      #
       # @option options [Hash] :options customer attributes
-      # @see https://vindi.github.io/api-docs/dist/#!/customers/POST_version_customers_format 
+      # @see https://vindi.github.io/api-docs/dist/#!/customers/POST_version_customers_format
       # @return [Hash] The customer created
       # @example Create a customer for a merchant vindi
       #   client.create_customer(name: 'John Doe', email: 'john.doe@mail.com')
@@ -55,6 +55,19 @@ module Vindi
       #   client.delete_customer(2)
       def delete_customer(customer_id, options = {})
         delete("customers/#{customer_id}", options)[:customer]
+      end
+
+
+      # Unarchive a customer from merchant vindi
+      #
+      # @params customer_id [Integer] ID of the customer
+      # @option options [Hash] :options customer attributes
+      #
+      # @see https://vindi.github.io/api-docs/dist/#!/customers/POST_version_customers_id_unarchive_format
+      # @example Unarchive customer #2
+      #   client.unarchive_customer(2)
+      def unarchive_customer(customer_id, options = {})
+        post("customers/#{customer_id}/unarchive", options)[:customer]
       end
     end
   end

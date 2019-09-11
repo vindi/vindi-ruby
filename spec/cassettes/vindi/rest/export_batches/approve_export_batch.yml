@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox-app.vindi.com.br/api/v1/export_batches/122/approve
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.5
+      Authorization:
+      - Basic eW1xTWxYYzBWY1BiUEpNcW82akJ1T0doN3BlUGhXVHF5YXZlMVpjY05NODo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 05 Sep 2019 12:41:16 GMT
+      Etag:
+      - W/"e6a95d04b2c653815e9df26c2d70ea67"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1567687336'
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Request-Id:
+      - f9589b18-3357-4d88-bbd8-52ac321f53a8
+      X-Runtime:
+      - '0.065705'
+      Content-Length:
+      - '702'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJleHBvcnRfYmF0Y2giOnsiaWQiOjEyMiwic3RhdHVzIjoiZXhwb3J0ZWQiLCJ1cmwiOiJodHRwczovL3ZpbmRpLXNieC1yZWN1cnJlbnQuczMuYW1hem9uYXdzLmNvbS9leHBvcnRfYmF0Y2hlcy9iYXRjaGVzLzAwMC8wMDAvMTIyL29yaWdpbmFsL0lUQVUtQ05BQjE1MF9TSVNERUItMjA0LTIwMTkwOTA1NDguUkVNP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2XHUwMDI2WC1BbXotQ3JlZGVudGlhbD1BS0lBSUFaN0dLUlRMTlZQUExCQSUyRjIwMTkwOTA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3RcdTAwMjZYLUFtei1EYXRlPTIwMTkwOTA1VDEyNDExNlpcdTAwMjZYLUFtei1FeHBpcmVzPTYwMFx1MDAyNlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdFx1MDAyNlgtQW16LVNpZ25hdHVyZT02YWZiMzNhNGJkZWExZGQ2ZTY1ZDE5YzVkNzA4NjQ5NzQ3OWM3NzBhNWYzMTY3Y2M0NzhiODAzYTIwODI2NTY2IiwiY3JlYXRlZF9hdCI6IjIwMTktMDktMDVUMDk6NDA6MzIuMDAwLTAzOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMDktMDVUMDk6NDE6MTYuNTk1LTAzOjAwIiwicGF5bWVudF9tZXRob2QiOnsiaWQiOjMzNywicHVibGljX25hbWUiOiJEw6liaXRvIGVtIGNvbnRhIiwibmFtZSI6ImTDqWJpdG8gdGVzdGUiLCJjb2RlIjoiYmFua19kZWJpdCIsInR5cGUiOiJQYXltZW50TWV0aG9kOjpCYW5rRGViaXQifX19
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 12:41:16 GMT
+recorded_with: VCR 3.0.3

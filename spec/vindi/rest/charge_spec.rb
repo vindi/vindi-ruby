@@ -65,4 +65,13 @@ RSpec.describe Vindi::Client::Charge do
       end
     end
   end
+  describe 'capture_charge' do
+    it 'returns the captured charge' do
+      VCR.use_cassette("rest/charges/capture_charge") do
+        charge_response = client.capture_charge(1546204)
+        assert_requested :post, vindi_url("charges/1546204/capture")
+        expect(charge_response[:last_transaction][:transaction_type]).to eq('capture')
+      end
+    end
+  end
 end

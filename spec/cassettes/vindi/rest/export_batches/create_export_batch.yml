@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox-app.vindi.com.br/api/v1/export_batches
+    body:
+      encoding: UTF-8
+      string: payment_company_code=itau&payment_method_code=bank_debit
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.5
+      Authorization:
+      - Basic eW1xTWxYYzBWY1BiUEpNcW82akJ1T0doN3BlUGhXVHF5YXZlMVpjY05NODo=
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 05 Sep 2019 12:40:32 GMT
+      Etag:
+      - W/"7794d182451c3dbd083bc9656f94aa96"
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '114'
+      Rate-Limit-Reset:
+      - '1567687263'
+      Server:
+      - nginx
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 1e1ad544-33d1-4dfc-8513-837819202518
+      X-Runtime:
+      - '0.258127'
+      Content-Length:
+      - '700'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJleHBvcnRfYmF0Y2giOnsiaWQiOjEyMiwic3RhdHVzIjoicmV2aWV3IiwidXJsIjoiaHR0cHM6Ly92aW5kaS1zYngtcmVjdXJyZW50LnMzLmFtYXpvbmF3cy5jb20vZXhwb3J0X2JhdGNoZXMvYmF0Y2hlcy8wMDAvMDAwLzEyMi9vcmlnaW5hbC9JVEFVLUNOQUIxNTBfU0lTREVCLTIwNC0yMDE5MDkwNTQ4LlJFTT9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1Nlx1MDAyNlgtQW16LUNyZWRlbnRpYWw9QUtJQUlBWjdHS1JUTE5WUFBMQkElMkYyMDE5MDkwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0XHUwMDI2WC1BbXotRGF0ZT0yMDE5MDkwNVQxMjQwMzJaXHUwMDI2WC1BbXotRXhwaXJlcz02MDBcdTAwMjZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3RcdTAwMjZYLUFtei1TaWduYXR1cmU9NjVkOTBlMTNhODA5NTk5YzE4NmQ1NWRkMzhiZDcwNmNmMWJiN2QwYjY1MTkzYzg5ZDMwNDhlYTQ3MWEyMzkxZCIsImNyZWF0ZWRfYXQiOiIyMDE5LTA5LTA1VDA5OjQwOjMyLjMyNy0wMzowMCIsInVwZGF0ZWRfYXQiOiIyMDE5LTA5LTA1VDA5OjQwOjMyLjQ0MS0wMzowMCIsInBheW1lbnRfbWV0aG9kIjp7ImlkIjozMzcsInB1YmxpY19uYW1lIjoiRMOpYml0byBlbSBjb250YSIsIm5hbWUiOiJkw6liaXRvIHRlc3RlIiwiY29kZSI6ImJhbmtfZGViaXQiLCJ0eXBlIjoiUGF5bWVudE1ldGhvZDo6QmFua0RlYml0In19fQ==
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 12:40:32 GMT
+recorded_with: VCR 3.0.3
