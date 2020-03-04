@@ -22,6 +22,7 @@ blocks:
         commands:
           - checkout
           - cache restore
+          - bundle install --deployment --path vendor/bundle
       jobs:
         - name: Test
           commands:
