@@ -1,0 +1,28 @@
+# For more Ruby information and examples, see
+# https://docs.semaphoreci.com/article/73-ruby
+version: v1.0
+name: vindi-ruby
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Setup
+    task:
+      jobs:
+        - name: Setup
+          commands:
+            - checkout
+            - cache restore
+            - bundle install --deployment --path vendor/bundle
+            - cache store
+  - name: Test
+    task:
+      prologue:
+        commands:
+          - checkout
+          - cache restore
+      jobs:
+        - name: Test
+          commands:
+            - bundle exec rake spec
