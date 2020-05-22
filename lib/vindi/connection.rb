@@ -9,6 +9,7 @@ module Vindi
     # @return Faraday::Connection
     def http_client
       @http_client = Faraday.new(api_endpoint, connection_options) do |http|
+        http.headers['Content-Type'] = 'application/json'
         http.request(:multipart)
         http.request(:url_encoded)
         http.basic_auth(@key, '')
@@ -25,7 +26,7 @@ module Vindi
 
     def request(method, path, data, options = {})
       @last_response = response = http_client
-        .public_send(method, URI::Parser.new.escape(path.to_s), data, options)
+        .public_send(method, URI::Parser.new.escape(path.to_s), data.to_json, options)
 
       response.body.empty? ? '' : symbolize_keys!(JSON.parse(response.body))
     end
