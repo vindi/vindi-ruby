@@ -9,6 +9,7 @@ module Vindi
     # @return Faraday::Connection
     def http_client
       @http_client = Faraday.new(api_endpoint, connection_options) do |http|
+        http.headers['Content-Type'] = 'application/json'
         http.request(:multipart)
         http.request(:url_encoded)
         http.headers['Content-Type'] = 'application/json'
