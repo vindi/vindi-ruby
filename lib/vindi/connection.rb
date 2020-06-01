@@ -3,7 +3,7 @@ require 'json'
 
 module Vindi
   module Connection
-
+    METHODS_WITH_QUERY = %w[get delete].freeze
     # HTTP client for the Vindi API
     #
     # @return Faraday::Connection
@@ -12,7 +12,6 @@ module Vindi
         http.headers['Content-Type'] = 'application/json'
         http.request(:multipart)
         http.request(:url_encoded)
-        http.headers['Content-Type'] = 'application/json'
         http.basic_auth(@key, '')
         http.builder.use @middleware
         http.adapter(Faraday.default_adapter)
@@ -26,8 +25,12 @@ module Vindi
     private
 
     def request(method, path, data, options = {})
-      @last_response = response = http_client
-        .public_send(method, URI::Parser.new.escape(path.to_s), data.to_json, options)
+      data = data.to_json unless METHODS_WITH_QUERY.include?(method)
+
+      @last_response =
+        response =
+          http_client
+          .public_send(method, URI::Parser.new.escape(path.to_s), data, options)
 
       response.body.empty? ? '' : symbolize_keys!(JSON.parse(response.body))
     end
