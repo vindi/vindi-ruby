@@ -3,7 +3,7 @@ require 'json'
 
 module Vindi
   module Connection
-    METHODS_WITH_QUERY = %w[get delete].freeze
+    METHODS_WITH_QUERY = Faraday::Connection::METHODS_WITH_QUERY.freeze
     # HTTP client for the Vindi API
     #
     # @return Faraday::Connection
@@ -25,7 +25,7 @@ module Vindi
     private
 
     def request(method, path, data, options = {})
-      data = data.to_json unless METHODS_WITH_QUERY.include?(method)
+      data = data.to_json unless METHODS_WITH_QUERY.include?(method.to_s)
 
       @last_response =
         response =
