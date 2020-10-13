@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox-app.vindi.com.br/api/v1/periods/382/usages
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Vindi-Ruby/0.0.6
+      Authorization:
+      - Basic eER3M2VsUHdkZGx6cWdGekpxWlhraXktalpselZ2WTdMMWFWZGNEYk1IZzo=
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 13 Oct 2020 20:51:35 GMT
+      Etag:
+      - W/"17c4110884e91e08af771af131522a10"
+      Per-Page:
+      - '25'
+      Rate-Limit-Limit:
+      - '120'
+      Rate-Limit-Remaining:
+      - '119'
+      Rate-Limit-Reset:
+      - '1602622355'
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Total:
+      - '1'
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 544a5bfc-3f52-40c4-95f7-8557d711e818
+      X-Runtime:
+      - '0.045795'
+      Content-Length:
+      - '269'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"usages":[{"id":653,"quantity":3,"description":null,"created_at":"2017-09-08T11:36:23.358-03:00","metadata":{},"product_item":{"id":141,"product":{"id":48,"name":"t-shirt
+        one","code":null}},"bill":null}]}'
+  recorded_at: Tue, 13 Oct 2020 20:51:35 GMT
+recorded_with: VCR 6.0.0
