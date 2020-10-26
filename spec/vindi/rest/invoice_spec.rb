@@ -44,4 +44,14 @@ RSpec.describe Vindi::Client::Invoice do
       end
     end
   end
+
+  describe 'retry_invoice' do
+    it 'returns the retried invoice' do
+      VCR.use_cassette("rest/invoices/retry_invoice") do
+        invoice_response = client.retry_invoice(108)
+        assert_requested :post, vindi_url("invoices/108/retry")
+        expect(invoice_response[:status]).to eq('processing')
+      end
+    end
+  end
 end
