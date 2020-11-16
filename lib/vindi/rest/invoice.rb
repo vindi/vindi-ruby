@@ -38,12 +38,22 @@ module Vindi
       #
       # @params invoice_id [Integer] ID of the invoice
       # @option options [Hash] :options invoice attributes
-      #
       # @see https://vindi.github.io/api-docs/dist/#!/invoices/DELETE_version_invoices_id_format
       # @example Delete invoice #108
       #   client.delete_invoice(108)
       def delete_invoice(invoice_id, options = {})
         delete("invoices/#{invoice_id}", options)[:invoice]
+      end
+
+      # Retry a invoice from merchant vindi
+      #
+      # @params invoice_id [Integer] ID of the invoice
+      # @option options [Hash] :options invoice attributes
+      # @see https://vindi.github.io/api-docs/dist/#/invoices/postV1InvoicesIdRetry
+      # @example Retry a invoice from merchant vindi
+      #   client.retry_invoice(108)
+      def retry_invoice(invoice_id, options = {})
+        post("invoices/#{invoice_id}/retry", options)[:invoice]
       end
     end
   end

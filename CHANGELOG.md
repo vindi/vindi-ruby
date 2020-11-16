@@ -1,6 +1,9 @@
 # Notas das versões
 
 
+## [v0.0.8 - 16/11/2020](https://github.com/vindi/vindi-ruby/releases/tag/v0.0.8)
+- Adiciona endpoint para retentativa de envio de notas fiscais
+
 ## [v0.0.7 - 14/10/2020](https://github.com/vindi/vindi-ruby/releases/tag/v0.0.7)
 - Adiciona endpoint para consulta de registros de utilização associados ao período
 
