@@ -47,6 +47,18 @@ module Vindi
       def update_period(period_id, options = {})
         put("periods/#{period_id}", options)[:period]
       end
+
+      # List period usages
+      #
+      # @params period_id [Integer] ID of the period
+      # @option options [Integer] :page (1) Page number.
+      # @return [Array<Hash>] A list of usages for a period.
+      # @see https://vindi.github.io/api-docs/dist/#/periods/getV1PeriodsIdUsages
+      # @example List period usages
+      #   client.list_period_usages(2)
+      def list_period_usages(period_id, options = {})
+        get("periods/#{period_id}/usages", options)[:usages]
+      end
     end
   end
 end
