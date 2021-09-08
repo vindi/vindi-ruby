@@ -11,7 +11,7 @@ module Vindi
       @http_client = Faraday.new(api_endpoint, connection_options) do |http|
         http.request(:multipart)
         http.request(:url_encoded)
-        http.basic_auth(@key, '')
+        http.request(:basic_auth, @key, '')
         http.builder.use @middleware
         http.adapter(Faraday.default_adapter)
       end
